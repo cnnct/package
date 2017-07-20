@@ -31,10 +31,10 @@
 > > * zip包输出目录：dist/x.y.z\[版本号\]/zip，用于存放完整初次开发项目包，此项目可以直接在eclipse中导入进行开发。
 > > * db数据脚本目录：dist/x.y.z\[版本号\]/zip，用于存放本版本相应的数据库脚本，1.0版本中包含基础库中的“01-结构.sql”、“02-数据.sql”，两个文件。后续版本中，则只需要增加数据库的增量变更脚本记录。
 > >
-> > 版本分支规范
+> > #### 版本分支规范
 > >
 > > * 一旦版本确认需要出包，则保证打包文件完整输出，且数据库脚本也完整的前提下，通过svn进行分支标签的建立，尽量保证分支的完整性及静态性。svn的分支操作方法详见：[http://blog.csdn.net/vbirdbest/article/details/51122637\[http://blog.csdn.net/vbirdbest/article/details/51122637\]\(http://blog.csdn.net/vbirdbest/article/details/51122637](http://blog.csdn.net/vbirdbest/article/details/51122637[http://blog.csdn.net/vbirdbest/article/details/51122637]%28http://blog.csdn.net/vbirdbest/article/details/51122637)\)
-> > * 分支标签目录：https://183.129.148.83:8843/svn/IPM/互联网产品部/项目/管理平台2.0/2-源代码/manageplat\_tags/x.y.z\[版本号\]
+> > * 分支标签目录：[https://183.129.148.83:8843/svn/IPM/互联网产品部/项目/管理平台2.0/2-源代码/manageplat\_tags/x.y.z\[版本号\](https://183.129.148.83:8843/svn/IPM/互联网产品部/项目/管理平台2.0/2-源代码/manageplat_tags/x.y.z[版本号\)\]
 
 ## 
 
