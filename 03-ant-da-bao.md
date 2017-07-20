@@ -13,7 +13,7 @@
 >
 > ### ant使用前提条件
 >
-> 已分别执行过本手册中两个步骤：[01-静态资源压缩打包](/01-jing-tai-zi-yuan-ya-suo-da-bao.md)，[02-java基础包混淆打包](/02-javaji-chu-bao-hun-yao-da-bao.md)
+> 已分别执行过本手册中两个步骤：[01-静态资源压缩打包](/01-jing-tai-zi-yuan-ya-suo-da-bao.md)，[02-java基础包混淆打包](/02-javaji-chu-bao-hun-yao-da-bao.md)   。
 >
 > ### build.xml文件
 >
