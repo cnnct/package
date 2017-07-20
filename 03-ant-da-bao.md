@@ -33,8 +33,8 @@
 > >
 > > 版本分支规范
 > >
-> > * 一旦版本确认需要出包，则保证打包文件完整输出，且数据库脚本也完整的前提下，通过svn进行分支标签的建立，尽量保证分支的完整性及静态性。svn的分支操作方法详见：http://blog.csdn.net/vbirdbest/article/details/51122637[http://blog.csdn.net/vbirdbest/article/details/51122637](http://blog.csdn.net/vbirdbest/article/details/51122637)
-> > * 分支标签目录：
+> > * 一旦版本确认需要出包，则保证打包文件完整输出，且数据库脚本也完整的前提下，通过svn进行分支标签的建立，尽量保证分支的完整性及静态性。svn的分支操作方法详见：[http://blog.csdn.net/vbirdbest/article/details/51122637\[http://blog.csdn.net/vbirdbest/article/details/51122637\]\(http://blog.csdn.net/vbirdbest/article/details/51122637](http://blog.csdn.net/vbirdbest/article/details/51122637[http://blog.csdn.net/vbirdbest/article/details/51122637]%28http://blog.csdn.net/vbirdbest/article/details/51122637)\)
+> > * 分支标签目录：https://183.129.148.83:8843/svn/IPM/互联网产品部/项目/管理平台2.0/2-源代码/manageplat\_tags/x.y.z\[版本号\]
 
 ## 
 
