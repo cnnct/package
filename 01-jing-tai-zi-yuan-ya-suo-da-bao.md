@@ -8,7 +8,7 @@ Gulp模块是基于node环境来运行，首先要在本地搭建node环境，�
 
 #### 1.1、安装包下载
 
-官网中下载msi安装包https://nodejs.org/en/download/官网中介绍两种版本：LTS和Current  LTS为稳定版。Current为当前版，后期更新频繁。建议新用户下载current，LTS是专门做项目来安装的。
+官网中下载msi安装包[https://nodejs.org/en/download/官网中介绍两种版本：LTS和Current](https://nodejs.org/en/download/官网中介绍两种版本：LTS和Current)  LTS为稳定版。Current为当前版，后期更新频繁。建议新用户下载current，LTS是专门做项目来安装的。
 
 #### 1.2、安装步骤
 
@@ -34,15 +34,13 @@ npm是node 的包管理工具，检测npm是否安装成功cmd 弹出命令窗�
 
 这里的项目环境不是指你正式项目的环境，最好在桌面临时建个。执行cnpm install gulp --save-dev 这个时候你临时建立的运行环境中就多出了一个node\_modules文件夹，这就是存放node模块的地方。
 
-注意：看下node\_modules是否有gulp-uglify和gulp-minify-css模块，如果没有执行下：
+**注意：看下node\_modules是否有gulp-uglify和gulp-minify-css模块，如果没有执行下：**
 
-cnpm install gulp-uglify       
+**cnpm install gulp-uglify**
 
-cnpm install gulp-minify-css
+**cnpm install gulp-minify-css**
 
 ![](/assets/import2.png)
-
-
 
 ## 二、gulp压缩js和css
 
@@ -50,9 +48,11 @@ cnpm install gulp-minify-css
 
 var gulp = require\('gulp'\),  //引用gulp的模块
 
-    minifycss = require\('gulp-minify-css'\),  //引用gulp css压缩的模块
+```
+minifycss = require\('gulp-minify-css'\),  //引用gulp css压缩的模块
 
-    uglify = require\('gulp-uglify'\),   //引用gulp js压缩的模块
+uglify = require\('gulp-uglify'\),   //引用gulp js压缩的模块
+```
 
 ## 1、js压缩
 
@@ -60,17 +60,19 @@ var gulp = require\('gulp'\),  //引用gulp的模块
 
 gulp.task\('script', function\(\) {
 
-    // 1. 找到js文件  \*.js 代表js文件夹中所有js文件
+```
+// 1. 找到js文件  \*.js 代表js文件夹中所有js文件
 
-    gulp.src\('js/\*.js'\)
+gulp.src\('js/\*.js'\)
 
-    // 2. 压缩文件，uglify\(\)要对应上面模块的名称引入一致
+// 2. 压缩文件，uglify\(\)要对应上面模块的名称引入一致
 
-        .pipe\(uglify\(\)\)
+    .pipe\(uglify\(\)\)
 
-    // 3. 另存压缩后的文件，根目录下
+// 3. 另存压缩后的文件，根目录下
 
-        .pipe\(gulp.dest\('dist/js'\)\)
+    .pipe\(gulp.dest\('dist/js'\)\)
+```
 
 }\)
 
@@ -80,7 +82,7 @@ gulp.task\('script', function\(\) {
 
 ![](/assets/1.png)
 
-注意：最后在dist/js  看的是压缩后的文件  但是名称还是和没压缩的一致，最好重命名下min.js
+**注意：最后在dist/js  看的是压缩后的文件  但是名称还是和没压缩的一致，最好重命名下min.js**
 
 ## 2、css压缩
 
@@ -88,39 +90,21 @@ gulp.task\('script', function\(\) {
 
 gulp.task\('css', function\(\) {
 
-    gulp.src\('css/\*.css'\)
+```
+gulp.src\('css/\*.css'\)
+```
 
 // 2.这里的方法名和js不一样。
 
-    .pipe\(minifycss\(\)\)
+```
+.pipe\(minifycss\(\)\)
 
-        .pipe\(gulp.dest\('dist/css'\)\)
+    .pipe\(gulp.dest\('dist/css'\)\)
+```
 
 }\)
 
 在当前项目根目录下cmd弹出的窗口中执行gulp css
 
-步骤截图就不做了，跟上面的js一样。 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+步骤截图就不做了，跟上面的js一样。
 
