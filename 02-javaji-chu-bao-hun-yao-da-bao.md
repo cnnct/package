@@ -20,7 +20,7 @@
 
 去proguard官网
 
-[https://www.guardsquare.com/en/proguard](https://www.guardsquare.com/en/proguard)
+https://www.guardsquare.com/en/proguard
 
 下载后解压，运行proguardgui.bat。
 
