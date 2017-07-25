@@ -64,11 +64,7 @@ increator.core.entity.\_\_：表示此包下所有java类（包含子目录中�
 
 所以下面这句话
 
-—keep public class increator.base.\*\* {
-
-```
-&lt;methods&gt;;
-```
+—keep public class increator.base.\*\* {&lt;methods&gt;;
 
 }
 
