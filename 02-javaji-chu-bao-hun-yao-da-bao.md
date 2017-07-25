@@ -52,21 +52,17 @@
 
 配置含义：
 
-```
 —keep：此软件保留不混淆关键字
 
 public class：表示java类
 
-increator.core.entity.\*\*：表示此包下所有java类（包含子目录中的类）
+increator.core.entity.\\*\\*：表示此包下所有java类（包含子目录中的类）
 
-{\*;}：表示java类中属性名、方法名
+{\\*;}：表示java类中属性名、方法名
 
 {&lt;fileds&gt;;}：表示java类中属性名
 
-{&lt;methods&gt;;
-```
-
-}：表示java类中方法名
+{&lt;methods&gt;;}：表示java类中方法名
 
 所以下面这句话
 
