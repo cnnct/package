@@ -10,7 +10,7 @@
 
 一、从eclipse等IDE中导出jar包
 
-    此处以eclipse为例，右击项目----&gt;Export----&gt;Export----&gt;选择Java下的JAR        file----&gt;Next----&gt;取消Select the resources to export:下面所有已选，然后选中需要导出jar包项目的所有java源代码，不含有java源代码的目录选不选随意----&gt;选中Export generated class files and resources----&gt;点击Browse选中导出目录----&gt;选中Compress the contents of the JAR files和Add directory entries----&gt;这里    没提到的选项最好不要选中----&gt;点击Finish----&gt;完成。
+此处以eclipse为例，右击项目----&gt;Export----&gt;Export----&gt;选择Java下的JAR        file----&gt;Next----&gt;取消Select the resources to export:下面所有已选，然后选中需要导出jar包项目的所有java源代码，不含有java源代码的目录选不选随意----&gt;选中Export generated class files and resources----&gt;点击Browse选中导出目录----&gt;选中Compress the contents of the JAR files和Add directory entries----&gt;这里    没提到的选项最好不要选中----&gt;点击Finish----&gt;完成。
 
 示例如下：
 
@@ -22,7 +22,7 @@
 
 去proguard官网
 
-https://www.guardsquare.com/en/proguard
+[https://www.guardsquare.com/en/proguard](https://www.guardsquare.com/en/proguard)
 
 下载后解压，运行proguardgui.bat。
 
@@ -52,23 +52,29 @@ https://www.guardsquare.com/en/proguard
 
 配置含义：
 
-    —keep：此软件保留不混淆关键字
+```
+—keep：此软件保留不混淆关键字
 
-    public class：表示java类
+public class：表示java类
 
-    increator.core.entity.\*\*：表示此包下所有java类（包含子目录中的类）
+increator.core.entity.\*\*：表示此包下所有java类（包含子目录中的类）
 
-    {\*;}：表示java类中属性名、方法名
+{\*;}：表示java类中属性名、方法名
 
-    {&lt;fileds&gt;;}：表示java类中属性名
+{&lt;fileds&gt;;}：表示java类中属性名
 
-    {&lt;methods&gt;;}：表示java类中方法名
+{&lt;methods&gt;;
+```
+
+}：表示java类中方法名
 
 所以下面这句话
 
 —keep public class increator.base.\*\* {
 
-    &lt;methods&gt;;
+```
+&lt;methods&gt;;
+```
 
 }
 
