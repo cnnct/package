@@ -2,9 +2,11 @@
 
 总共分两大步：
 
-    1.从eclipse等IDE中导出jar包
+```
+1.从eclipse等IDE中导出jar包
 
-    2.使用proguard混淆jar包中代码
+2.使用proguard混淆jar包中代码
+```
 
 一、从eclipse等IDE中导出jar包
 
@@ -16,13 +18,13 @@
 
 二、使用proguard混淆jar包中代码
 
-1.proguard下载启动
+    1.proguard下载启动
 
-去proguard官网
+    去proguard官网
 
-[https://www.guardsquare.com/en/proguard](https://www.guardsquare.com/en/proguard)
+    [https://www.guardsquare.com/en/proguard](https://www.guardsquare.com/en/proguard)
 
-下载后解压，运行proguardgui.bat。
+    下载后解压，运行proguardgui.bat。
 
 2.proguard配置（示例所用版本为5.3.3）
 
