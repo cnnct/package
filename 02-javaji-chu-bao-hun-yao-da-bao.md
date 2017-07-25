@@ -2,11 +2,9 @@
 
 总共分两大步：
 
-```
 1.从eclipse等IDE中导出jar包
 
 2.使用proguard混淆jar包中代码
-```
 
 一、从eclipse等IDE中导出jar包
 
@@ -56,7 +54,7 @@
 
 public class：表示java类
 
-increator.core.entity.\\*\\*：表示此包下所有java类（包含子目录中的类）
+increator.core.entity.\_\_：表示此包下所有java类（包含子目录中的类）
 
 {\\*;}：表示java类中属性名、方法名
 
