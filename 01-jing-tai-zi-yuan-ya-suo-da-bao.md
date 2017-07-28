@@ -49,9 +49,9 @@ npm是node 的包管理工具，检测npm是否安装成功cmd 弹出命令窗�
 var gulp = require\('gulp'\),  //引用gulp的模块
 
 ```
-minifycss = require\('gulp-minify-css'\),  //引用gulp css压缩的模块
-
-uglify = require\('gulp-uglify'\),   //引用gulp js压缩的模块
+minifycss = require('gulp-minify-css'),  //引用gulp css压缩的模块
+rename = require('gulp-rename'),    //引用重命名包
+uglify = require('gulp-uglify'),   //引用gulp js压缩的模块
 ```
 
 ## 1、js压缩
@@ -63,15 +63,15 @@ gulp.task\('script', function\(\) {
 ```
 // 1. 找到js文件  \*.js 代表js文件夹中所有js文件
 
-gulp.src\('js/\*.js'\)
+gulp.src('js/*.js')
 
 // 2. 压缩文件，uglify\(\)要对应上面模块的名称引入一致
 
-    .pipe\(uglify\(\)\)
+    .pipe(uglify())
 
 // 3. 另存压缩后的文件，根目录下
 
-    .pipe\(gulp.dest\('dist/js'\)\)
+    .pipe(gulp.dest('dist/js'))
 ```
 
 }\)
