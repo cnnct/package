@@ -40,6 +40,10 @@ npm是node 的包管理工具，检测npm是否安装成功cmd 弹出命令窗�
 
 **cnpm install gulp-minify-css**
 
+**如果希望后面自动带min   看是否有gulp-rename , 没有执行：**
+
+**cnpm install gulp-rename**
+
 ![](/assets/import2.png)
 
 ## 二、gulp压缩js和css
