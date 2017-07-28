@@ -102,8 +102,7 @@ gulp.src('css/*.css')
 //重命名
     .pipe(rename({suffix:'.min'}))
     .pipe(minifycss())
-
-    .pipe\(gulp.dest\('dist/css'\)\)
+    .pipe(gulp.dest('dist/css'))
 ```
 
 }\)
