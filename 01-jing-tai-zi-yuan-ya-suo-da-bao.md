@@ -93,13 +93,15 @@ gulp.src('js/*.js')
 gulp.task\('css', function\(\) {
 
 ```
-gulp.src\('css/\*.css'\)
+gulp.src('css/*.css')
 ```
 
 // 2.这里的方法名和js不一样。
 
 ```
-.pipe\(minifycss\(\)\)
+//重命名
+    .pipe(rename({suffix:'.min'}))
+    .pipe(minifycss())
 
     .pipe\(gulp.dest\('dist/css'\)\)
 ```
