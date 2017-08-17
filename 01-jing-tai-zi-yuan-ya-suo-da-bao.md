@@ -64,8 +64,6 @@ uglify = require\('gulp-uglify'\),   //引用gulp js压缩的模块
 
 还是在gulpfile.js 后面写入：
 
-
-
 ```
 gulp.task('script', function() {
 // 1. 找到js文件  \*.js 代表js文件夹中所有js文件
@@ -79,9 +77,10 @@ gulp.src\('js/\*.js'\)
 // 3. 另存压缩后的文件，根目录下
 
     .pipe\(gulp.dest\('dist/js'\)\)
+})
 ```
 
-}\)
+
 
 原始js文件：
 
