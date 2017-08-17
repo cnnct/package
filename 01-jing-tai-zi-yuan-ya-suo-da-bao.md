@@ -99,9 +99,13 @@ gulp.src('css/*.css')
 
 步骤截图就不做了，跟上面的js一样。
 
+## 2、注意
 
+若使用cnpm进行gulp的局部环境安装不成功时，改成npm安装
 
-## 2、css压缩
+```
+npm install gulp --save-dev
+```
 
 
 
