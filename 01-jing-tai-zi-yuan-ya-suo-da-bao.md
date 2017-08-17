@@ -80,8 +80,6 @@ gulp.src\('js/\*.js'\)
 })
 ```
 
-
-
 原始js文件：
 
 ![](/assets/2.png)
@@ -94,21 +92,13 @@ gulp.src\('js/\*.js'\)
 
 知道会压缩js文件，css操作就会相对简单的多。
 
-gulp.task\('css', function\(\) {
-
 ```
-gulp.src\('css/\*.css'\)
+gulp.task('css', function() {
+gulp.src('css/*.css')
+.pipe(minifycss())
+.pipe(gulp.dest('dist/css'))
+})
 ```
-
-// 2.这里的方法名和js不一样。
-
-```
-.pipe\(minifycss\(\)\)
-
-    .pipe\(gulp.dest\('dist/css'\)\)
-```
-
-}\)
 
 在当前项目根目录下cmd弹出的窗口中执行gulp css
 
