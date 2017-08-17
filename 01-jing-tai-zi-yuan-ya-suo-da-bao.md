@@ -110,8 +110,8 @@ npm install gulp --save-dev
 后续命令也一样，**cnpm install gulp-uglify、cnpm install gulp-minify-css**，也都可以改成
 
 ```
-cnpm install gulp-uglify
-cnpm install gulp-minify-css
+npm install gulp-uglify
+npm install gulp-minify-css
 ```
 
 
