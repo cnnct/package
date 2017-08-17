@@ -101,7 +101,7 @@ gulp.src('css/*.css')
 
 ## 2、注意
 
-若使用cnpm进行gulp的局部环境安装不成功时，改成npm安装
+若使用cnpm进行gulp的局部环境安装不成功时，不成功的错误情况我出现得比较杂比较多，什么版本低，目录不存在等，可改成npm安装
 
 ```
 npm install gulp --save-dev
