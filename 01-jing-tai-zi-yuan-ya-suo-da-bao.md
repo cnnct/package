@@ -24,8 +24,6 @@ Gulp模块是基于node环境来运行，首先要在本地搭建node环境，�
 
 npm是node 的包管理工具，检测npm是否安装成功cmd 弹出命令窗口输入npm –v 。可以利用它来安装gulp所需的包。由于国内有墙，npm安装的包的过程中有时候会非常缓慢，建议先安装淘宝的镜像npm的管理包cnpm  官网地址：[https://npm.taobao.org/](https://npm.taobao.org/)
 
-
-
 ```
 C:\Users\Administrator.USER-20170419MQ>npm install -g cnpm --registry=https://re
 gistry.npm.taobao.org/
@@ -55,9 +53,10 @@ added 643 packages in 211.902s
 
 在项目的根目录下新建gulpfile.js，里面写入此代码
 
-var gulp = require\('gulp'\),  //引用gulp的模块
+
 
 ```
+var gulp = require('gulp'),  //引用gulp的模块
 minifycss = require\('gulp-minify-css'\),  //引用gulp css压缩的模块
 
 uglify = require\('gulp-uglify'\),   //引用gulp js压缩的模块
