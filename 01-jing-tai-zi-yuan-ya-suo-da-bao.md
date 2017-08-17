@@ -28,7 +28,14 @@ npm是node 的包管理工具，检测npm是否安装成功cmd 弹出命令窗�
 npm install -g cnpm --registry=https://registry.npm.taobao.org/
 ```
 
-
+```
+C:\Users\Administrator.USER-20170419MQ>npm install -g cnpm --registry=https://re
+gistry.npm.taobao.org/
+C:\Users\Administrator.USER-20170419MQ\AppData\Roaming\npm\cnpm -> C:\Users\Admi
+nistrator.USER-20170419MQ\AppData\Roaming\npm\node_modules\cnpm\bin\cnpm
++ cnpm@5.1.1
+added 643 packages in 211.902s
+```
 
 #### 2.1、全局安装gulp
 
