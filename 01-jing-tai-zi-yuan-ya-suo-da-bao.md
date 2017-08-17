@@ -53,8 +53,6 @@ added 643 packages in 211.902s
 
 在项目的根目录下新建gulpfile.js，里面写入此代码
 
-
-
 ```
 var gulp = require('gulp'),  //引用gulp的模块
 minifycss = require\('gulp-minify-css'\),  //引用gulp css压缩的模块
@@ -66,9 +64,10 @@ uglify = require\('gulp-uglify'\),   //引用gulp js压缩的模块
 
 还是在gulpfile.js 后面写入：
 
-gulp.task\('script', function\(\) {
+
 
 ```
+gulp.task('script', function() {
 // 1. 找到js文件  \*.js 代表js文件夹中所有js文件
 
 gulp.src\('js/\*.js'\)
