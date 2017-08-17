@@ -54,10 +54,9 @@ added 643 packages in 211.902s
 在项目的根目录下新建gulpfile.js，里面写入此代码
 
 ```
-var gulp = require('gulp'),  //引用gulp的模块
-minifycss = require\('gulp-minify-css'\),  //引用gulp css压缩的模块
-
-uglify = require\('gulp-uglify'\),   //引用gulp js压缩的模块
+var gulp = require('gulp'); //引用gulp的模块
+minifycss = require('gulp-minify-css');//引用gulp css压缩的模块
+uglify = require('gulp-uglify'); //引用gulp js压缩的模块
 ```
 
 ## 1、js压缩
@@ -103,8 +102,4 @@ gulp.src('css/*.css')
 在当前项目根目录下cmd弹出的窗口中执行gulp css
 
 步骤截图就不做了，跟上面的js一样。
-
-
-
-
 
