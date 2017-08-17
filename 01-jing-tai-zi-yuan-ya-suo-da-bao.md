@@ -92,6 +92,7 @@ gulp.src\('js/\*.js'\)
 知道会压缩js文件，css操作就会相对简单的多。
 
 ```
+//执行css压缩任务
 gulp.task('css', function() {
 gulp.src('css/*.css')
 .pipe(minifycss())
