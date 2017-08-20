@@ -65,13 +65,13 @@ uglify = require('gulp-uglify'),   //引用gulp js压缩的模块
 gulp.task\('script', function\(\) {
 
 ```
-// 1. 找到js文件  \*.js 代表js文件夹中所有js文件
+// 1. 找到js文件  *.js 代表js文件夹中所有js文件
 
 gulp.src('js/*.js')
 //重命名
     .pipe(rename({suffix:'.min'}))
 
-// 2. 压缩文件，uglify\(\)要对应上面模块的名称引入一致
+// 2. 压缩文件，uglify()要对应上面模块的名称引入一致
 
     .pipe(uglify())
 
