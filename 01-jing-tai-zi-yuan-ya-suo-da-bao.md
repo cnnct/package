@@ -8,7 +8,7 @@ Gulp模块是基于node环境来运行，首先要在本地搭建node环境，�
 
 #### 1.1、安装包下载
 
-官网中下载msi安装包[https://nodejs.org/en/download/](https://nodejs.org/en/download)  ,官网中介绍两种版本：LTS和Current,LTS为稳定版。Current为当前版，后期更新频繁。建议新用户下载current，LTS是专门做项目来安装的。
+官网中下载msi安装包[https://nodejs.org/en/download/官网中介绍两种版本：LTS和Current](https://nodejs.org/en/download/官网中介绍两种版本：LTS和Current)  LTS为稳定版。Current为当前版，后期更新频繁。建议新用户下载current，LTS是专门做项目来安装的。
 
 #### 1.2、安装步骤
 
@@ -24,14 +24,7 @@ Gulp模块是基于node环境来运行，首先要在本地搭建node环境，�
 
 npm是node 的包管理工具，检测npm是否安装成功cmd 弹出命令窗口输入npm –v 。可以利用它来安装gulp所需的包。由于国内有墙，npm安装的包的过程中有时候会非常缓慢，建议先安装淘宝的镜像npm的管理包cnpm  官网地址：[https://npm.taobao.org/](https://npm.taobao.org/)
 
-```
-C:\Users\Administrator.USER-20170419MQ>npm install -g cnpm --registry=https://re
-gistry.npm.taobao.org/
-C:\Users\Administrator.USER-20170419MQ\AppData\Roaming\npm\cnpm -> C:\Users\Admi
-nistrator.USER-20170419MQ\AppData\Roaming\npm\node_modules\cnpm\bin\cnpm
-+ cnpm@5.1.1
-added 643 packages in 211.902s
-```
+![](/assets/import.png)
 
 #### 2.1、全局安装gulp
 
@@ -47,32 +40,47 @@ added 643 packages in 211.902s
 
 **cnpm install gulp-minify-css**
 
+**如果希望后面自动带min   看是否有gulp-rename , 没有执行：**
+
+**cnpm install gulp-rename**
+
 ![](/assets/import2.png)
 
 ## 二、gulp压缩js和css
 
 在项目的根目录下新建gulpfile.js，里面写入此代码
 
+var gulp = require\('gulp'\),  //引用gulp的模块
+
 ```
-var gulp = require('gulp'); //引用gulp的模块
-minifycss = require('gulp-minify-css');//引用gulp css压缩的模块
-uglify = require('gulp-uglify'); //引用gulp js压缩的模块
+minifycss = require('gulp-minify-css'),  //引用gulp css压缩的模块
+rename = require('gulp-rename'),    //引用重命名包
+uglify = require('gulp-uglify'),   //引用gulp js压缩的模块
 ```
 
 ## 1、js压缩
 
 还是在gulpfile.js 后面写入：
 
+gulp.task\('script', function\(\) {
+
 ```
-gulp.task('script', function() {
-// 1. 找到js文件  \*.js 代表js文件夹中所有js文件
+// 1. 找到js文件  *.js 代表js文件夹中所有js文件
+
 gulp.src('js/*.js')
+//重命名
+    .pipe(rename({suffix:'.min'}))
+
 // 2. 压缩文件，uglify()要对应上面模块的名称引入一致
-.pipe(uglify())
+
+    .pipe(uglify())
+
 // 3. 另存压缩后的文件，根目录下
-.pipe(gulp.dest('dist/js'))
-});
+
+    .pipe(gulp.dest('dist/js'))
 ```
+
+}\)
 
 原始js文件：
 
@@ -86,33 +94,24 @@ gulp.src('js/*.js')
 
 知道会压缩js文件，css操作就会相对简单的多。
 
+gulp.task\('css', function\(\) {
+
 ```
-//执行css压缩任务
-gulp.task('css', function() {
 gulp.src('css/*.css')
-.pipe(minifycss())
-.pipe(gulp.dest('dist/css'))
-})
 ```
+
+// 2.这里的方法名和js不一样。
+
+```
+//重命名
+    .pipe(rename({suffix:'.min'}))
+    .pipe(minifycss())
+    .pipe(gulp.dest('dist/css'))
+```
+
+}\)
 
 在当前项目根目录下cmd弹出的窗口中执行gulp css
 
 步骤截图就不做了，跟上面的js一样。
-
-## 3、注意
-
-若使用cnpm进行gulp的局部环境安装不成功时，不成功的错误情况我出现得比较杂比较多，什么版本低，目录不存在等，可改成npm安装
-
-```
-npm install gulp --save-dev
-```
-
-后续命令也一样，**cnpm install gulp-uglify、cnpm install gulp-minify-css**，也都可以改成
-
-```
-npm install gulp-uglify
-npm install gulp-minify-css
-```
-
-
 
