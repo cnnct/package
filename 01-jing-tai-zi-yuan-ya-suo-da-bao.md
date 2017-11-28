@@ -8,7 +8,7 @@ Gulp模块是基于node环境来运行，首先要在本地搭建node环境，�
 
 #### 1.1、安装包下载
 
-官网中下载msi安装包[https://nodejs.org/en/download/](https://nodejs.org/en/download) 官网中介绍两种版本：LTS和Current,  LTS为稳定版。Current为当前版，后期更新频繁。建议新用户下载current，LTS是专门做项目来安装的。
+官网中下载msi安装包[https://nodejs.org/en/download/](https://nodejs.org/en/download) ，官网中介绍两种版本：LTS和Current,  LTS为稳定版。Current为当前版，后期更新频繁。建议新用户下载current，LTS是专门做项目来安装的。
 
 #### 1.2、安装步骤
 
