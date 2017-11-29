@@ -8,8 +8,8 @@
     * [其它全局缓存](hou-duan-kuang-jia/huan-cun-guan-li/qi-ta-quan-ju-pei-zhi-huan-cun.md)
   * [自定义异常管理](hou-duan-kuang-jia/zi-ding-yi-yi-chang.md)
   * [接口框架](hou-duan-kuang-jia/jie-kou-kuang-jia.md)
-  * 多数据源改造
-  * 基础包oracle和mysql切换
+  * [多数据源改造](hou-duan-kuang-jia/duo-shu-ju-yuan-gai-zao.md)
+  * [基础包oracle和mysql切换](hou-duan-kuang-jia/ji-chu-bao-oracle-he-mysql-qie-huan.md)
   * [redis使用](hou-duan-kuang-jia/redisshi-yong.md)
   * [mybatis动态刷新](hou-duan-kuang-jia/mybatisdong-tai-shua-xin.md)
   * [mybatis逆向生成](hou-duan-kuang-jia/mybatisni-xiang-sheng-cheng.md)
