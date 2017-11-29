@@ -19,8 +19,8 @@
 * [前端页面](qian-duan-ye-mian.md)
   * [标签库](qian-duan-ye-mian/biao-qian-ku.md)
     * [table标签](qian-duan-ye-mian/biao-qian-ku/tablebiao-qian.md)
-  * 提示对话框
-  * js验证框架
+  * [提示对话框](qian-duan-ye-mian/ti-shi-dui-hua-kuang.md)
+  * [js验证框架](qian-duan-ye-mian/jsyan-zheng-kuang-jia.md)
   * [文件上传](qian-duan-ye-mian/wen-jian-shang-chuan.md)
     * [单文件上传](qian-duan-ye-mian/wen-jian-shang-chuan/dan-wen-jian-shang-chuan.md)
     * [多文件上传](qian-duan-ye-mian/wen-jian-shang-chuan/duo-wen-jian-shang-chuan.md)
@@ -31,6 +31,4 @@
   * [01-静态资源gulp压缩打包](kuang-jia-da-bao/01-jing-tai-zi-yuan-ya-suo-da-bao.md)
   * [02-java基础包混淆打包](kuang-jia-da-bao/02-javaji-chu-bao-hun-yao-da-bao.md)
   * [03-Ant打包](kuang-jia-da-bao/03-ant-da-bao.md)
-
-
 
