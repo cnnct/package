@@ -15,7 +15,7 @@
   * [mybatis逆向生成【陆】](hou-duan-kuang-jia/mybatisni-xiang-sheng-cheng.md)
   * [ueditor改造【施】](hou-duan-kuang-jia/ueditorgai-zao.md)
   * [key实现【彭】](hou-duan-kuang-jia/keyshi-xian.md)
-  * [全局配置文件读取](hou-duan-kuang-jia/quan-ju-pei-zhi-wen-jian-du-qu.md)
+  * [全局配置文件读取【陆】](hou-duan-kuang-jia/quan-ju-pei-zhi-wen-jian-du-qu.md)
   * 动态sql
   * [报表及打印](hou-duan-kuang-jia/bao-biao-ji-da-yin.md)
     * [ireport整合](hou-duan-kuang-jia/bao-biao-ji-da-yin/ireportzheng-he.md)
