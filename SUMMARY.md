@@ -10,6 +10,7 @@
   * 接口框架
   * 多数据源改造
   * 基础包oracle和mysql切换
+  * redis使用
 * [前端页面](qian-duan-ye-mian.md)
 * [框架打包](kuang-jia-da-bao.md)
   * [01-静态资源gulp压缩打包](kuang-jia-da-bao/01-jing-tai-zi-yuan-ya-suo-da-bao.md)
