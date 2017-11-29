@@ -16,7 +16,7 @@
   * [ueditor改造【施】](hou-duan-kuang-jia/ueditorgai-zao.md)
   * [key实现【彭】](hou-duan-kuang-jia/keyshi-xian.md)
   * [全局配置文件读取【陆】](hou-duan-kuang-jia/quan-ju-pei-zhi-wen-jian-du-qu.md)
-  * 动态sql
+  * [动态sql](hou-duan-kuang-jia/dong-tai-sql.md)
   * [报表及打印](hou-duan-kuang-jia/bao-biao-ji-da-yin.md)
     * [ireport整合](hou-duan-kuang-jia/bao-biao-ji-da-yin/ireportzheng-he.md)
     * [smsx.cab整合](hou-duan-kuang-jia/bao-biao-ji-da-yin/smsxcabzheng-he.md)
