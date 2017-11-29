@@ -18,7 +18,7 @@
   * [全局配置文件读取](hou-duan-kuang-jia/quan-ju-pei-zhi-wen-jian-du-qu.md)
   * 动态sql
   * [报表及打印](hou-duan-kuang-jia/bao-biao-ji-da-yin.md)
-    * ireport整合
+    * [ireport整合](hou-duan-kuang-jia/bao-biao-ji-da-yin/ireportzheng-he.md)
     * [smsx.cab整合](hou-duan-kuang-jia/bao-biao-ji-da-yin/smsxcabzheng-he.md)
 * [前端页面](qian-duan-ye-mian.md)
   * [标签库](qian-duan-ye-mian/biao-qian-ku.md)
