@@ -16,6 +16,7 @@
   * [ueditor改造](hou-duan-kuang-jia/ueditorgai-zao.md)
   * [key实现](hou-duan-kuang-jia/keyshi-xian.md)
   * [全局配置文件读取](hou-duan-kuang-jia/quan-ju-pei-zhi-wen-jian-du-qu.md)
+  * 动态sql
 * [前端页面](qian-duan-ye-mian.md)
   * [标签库](qian-duan-ye-mian/biao-qian-ku.md)
     * [table标签](qian-duan-ye-mian/biao-qian-ku/tablebiao-qian.md)
