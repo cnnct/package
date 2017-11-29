@@ -1,1 +1,1 @@
-重点说明readconfig作用
+重点说明readconfig作用，以及使用说明
