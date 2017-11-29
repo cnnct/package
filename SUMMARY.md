@@ -5,8 +5,8 @@
   * [主要配置说明](hou-duan-kuang-jia/zhu-yao-pei-zhi-shuo-ming.md)
   * [缓存管理](hou-duan-kuang-jia/huan-cun-guan-li.md)
     * [session缓存](hou-duan-kuang-jia/huan-cun-guan-li/sessionhuan-cun.md)
-    * 其它全局配置缓存
-  * 自定义异常
+    * [其它全局缓存](hou-duan-kuang-jia/huan-cun-guan-li/qi-ta-quan-ju-pei-zhi-huan-cun.md)
+  * [自定义异常管理](hou-duan-kuang-jia/zi-ding-yi-yi-chang.md)
   * 接口框架
   * 多数据源改造
   * 基础包oracle和mysql切换
