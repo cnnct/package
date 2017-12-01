@@ -31,6 +31,7 @@
   * [首页布局](qian-duan-ye-mian/shou-ye-bu-ju.md)
     * [菜单组件【施、陈】](qian-duan-ye-mian/shou-ye-bu-ju/cai-dan-zu-jian.md)
     * [皮肤切换【施、陈】](qian-duan-ye-mian/shou-ye-bu-ju/pi-fu-qie-huan.md)
+  * echarts整合【施】
 * [框架打包](kuang-jia-da-bao.md)
   * [01-静态资源gulp压缩打包](kuang-jia-da-bao/01-jing-tai-zi-yuan-ya-suo-da-bao.md)
   * [02-java基础包混淆打包](kuang-jia-da-bao/02-javaji-chu-bao-hun-yao-da-bao.md)
