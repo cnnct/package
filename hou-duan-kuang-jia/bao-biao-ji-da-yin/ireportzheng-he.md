@@ -16,9 +16,9 @@
 
 > 此类必须继承JasperReportsMultiFormatView
 
+* ### jar包处理
 
-
-
+> json-lib-2.1-jdk15.jar升级为json-lib-2.4-jdk15.jar
 
 
 
