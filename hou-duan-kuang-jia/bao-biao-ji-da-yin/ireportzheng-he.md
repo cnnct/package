@@ -24,7 +24,7 @@
 >
 > jasperreports-5.0.1.jar升级为jasperreports-5.6.0.jar
 >
-> 删除jasperreports-xxxxxx等三个jar包
+> 删除jasperreports-char-themes-5.0.5.jar、jasperreports-extensions-3.5.3.jar、jasperreports-fonts-5.0.jar等三个jar包
 
 
 
