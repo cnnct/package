@@ -19,6 +19,12 @@
 * ### jar包处理
 
 > json-lib-2.1-jdk15.jar升级为json-lib-2.4-jdk15.jar
+>
+> groovy-all-1.7.5.jar升级为groovy-all-2.2.2.jar
+>
+> jasperreports-5.0.1.jar升级为jasperreports-5.6.0.jar
+>
+> 删除jasperreports-xxxxxx等三个jar包
 
 
 
