@@ -14,7 +14,7 @@
 
 * ### 增加类increator.base.report.CustomReportView
 
-> ### 此类必须继承JasperReportsMultiFormatView
+> 此类必须继承JasperReportsMultiFormatView
 
 
 
