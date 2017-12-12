@@ -12,7 +12,9 @@
 
 > 主要作用是配置jaserreport生成的相关参数，如自定义报表jsperreport视图扩展类increator.base.report.CustomReportView
 
-* ### 增加类
+* ### 增加类increator.base.report.CustomReportView
+
+> ### 此类必须继承JasperReportsMultiFormatView
 
 
 
