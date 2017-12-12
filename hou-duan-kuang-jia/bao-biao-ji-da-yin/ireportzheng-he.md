@@ -12,5 +12,7 @@
 
 > 主要作用是配置jaserreport生成的相关参数，如自定义报表扩展类increator.base.report.CustomReportView
 
+* ### 增加类
+
 
 
