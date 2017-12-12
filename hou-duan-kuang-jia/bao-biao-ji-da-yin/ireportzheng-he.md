@@ -1,4 +1,4 @@
-在core\baseconfig\spring\springmvc-servlet.xml中增加解析器配置
+* ##### 在core\baseconfig\spring\springmvc-servlet.xml中增加解析器配置
 
 ```
 <!-- 注册XmlViewResolver，用于iReport & JasperReports报表生成 -->
