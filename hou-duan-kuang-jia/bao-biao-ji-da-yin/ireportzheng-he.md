@@ -14,7 +14,7 @@
 
 * ### 增加类increator.base.report.CustomReportView
 
-> 此类必须继承JasperReportsMultiFormatView，主要实现
+> 此类必须继承JasperReportsMultiFormatView，重写父类的fillReport方法。
 
 * ### jar包处理
 
