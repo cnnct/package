@@ -41,6 +41,13 @@
 > > ```
 > >
 > > 再在报表显示请求方法中，重新根据key获取到当前的查询条件，查询结果作为报表展示数据的数据源。
+> >
+> > ```
+> > //③数据源，先查询条件，可从缓存中获取，也可重新赋值
+> > //入参即为对应在的查询功能缓存的查询条件的map的key，其key值与queryBrchInfo方法中指定key为同一个
+> > Map reportMap=super.getTableSearchData("/sys/auth/brch/query");
+> > model.addAttribute("jrMainDataSource", brchServ.getBrchList(reportMap));
+> > ```
 
 
 
