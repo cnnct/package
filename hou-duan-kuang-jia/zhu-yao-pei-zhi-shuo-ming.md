@@ -2,7 +2,7 @@
 
 #### web.xml
 
-配置Spring配置文件路径
+配置Spring
 
 ```
 <context-param>
@@ -11,7 +11,7 @@
 </context-param>
 ```
 
-配置SpringMVC配置文件路径
+配置SpringMVC
 
 ```
 <servlet>
@@ -21,6 +21,16 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:config/spring/context-mvc.xml</param-value>
   </init-param>
+  <load-on-startup>1</load-on-startup>
+</servlet>
+```
+
+配置FreeMarker
+
+```
+<servlet>
+  <servlet-name>freemarker</servlet-name>
+  <servlet-class>freemarker.ext.servlet.FreemarkerServlet</servlet-class>
   <load-on-startup>1</load-on-startup>
 </servlet>
 ```
