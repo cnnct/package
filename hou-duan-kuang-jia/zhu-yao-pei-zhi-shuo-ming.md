@@ -38,6 +38,11 @@
   <servlet-class>freemarker.ext.servlet.FreemarkerServlet</servlet-class>
   <load-on-startup>1</load-on-startup>
 </servlet>
+
+<servlet-mapping>
+  <servlet-name>freemarker</servlet-name>
+  <url-pattern>*.ftl</url-pattern>
+</servlet-mapping>
 ```
 
 #### context.xml
