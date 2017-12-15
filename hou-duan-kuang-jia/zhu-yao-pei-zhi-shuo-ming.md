@@ -94,13 +94,13 @@ springmvc-servlet.xml为开发人员配置controller等所用。
   <!-- 使用sqlSessionFactoryBeanName -->
   <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
 </bean>
-    
+
 <!--     扫描标签库的service和tag注解组件 -->
 <context:component-scan base-package="increator.core.service,com.cnt,increator.core.tag"/>
-   
+
 <!-- 数据库工具类,用于获取数据库类型 -->
 <bean id="databaseUtil" class= "increator.core.util.DatabaseUtil" init-method="init" lazy-init="false" />
-    
+
 <!-- 用于Mybatis热部署,开发环境时使用,生产环境通过修改para.properties中的mybatis_refresh为false禁用 -->
 <bean id="mapperRefreshStart" class="increator.base.MapperRefreshStart" init-method="init" />
 ```
@@ -138,9 +138,149 @@ springmvc-servlet.xml为开发人员配置controller等所用。
     <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
   </property>
 </bean>
-    
+
 <!-- redis工厂 -->
 <bean id="RedisFactory" class="com.cnnct.basic.redis.RedisFactory" init-method="init" lazy-init="false"/>
+```
+
+#### applicationContext-dao.xml
+
+```
+  <!-- spring容器只有第一个context:property-placeholder会生效,后面的都会被忽略,所以加载properties配置文件都写在这里,以","号分隔 -->
+	<context:property-placeholder location="classpath:config/parameter/db.properties,classpath:config/parameter/redis.properties"/>
+
+
+	<!--============= datasourece配置开始================= -->
+    <!-- 数据源1 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<!-- 配置初始化大小、最小、最大 -->
+	    <property name="initialSize" value="5" />
+	    <property name="minIdle" value="1" />
+	    <property name="maxActive" value="20" />
+	    <!-- 配置获取连接等待超时的时间 -->
+	    <property name="maxWait" value="60000" />
+	    <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+	    <property name="timeBetweenEvictionRunsMillis" value="60000" />
+	    <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+	    <property name="minEvictableIdleTimeMillis" value="300000" />
+	    <property name="validationQuery" value="#{'#{jdbc.driver}'=='com.mysql.jdbc.Driver'?'SELECT 1':'SELECT 1 FROM DUAL'}" />
+	    <property name="testWhileIdle" value="true" />
+	    <property name="testOnBorrow" value="false" />
+	    <property name="testOnReturn" value="false" />
+	    <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+	    <property name="poolPreparedStatements" value="true" />
+	    <property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+	</bean>
+    <!-- 数据源2 -->
+<!-- 	<bean id="dataSource2" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close"> -->
+<!--         <property name="driverClassName" value="${jdbc.driver2}" /> -->
+<!--         <property name="url" value="${jdbc.url2}" /> -->
+<!--         <property name="username" value="${jdbc.username2}" /> -->
+<!--         <property name="password" value="${jdbc.password2}" /> -->
+<!--         <property name="initialSize" value="5" /> -->
+<!--         <property name="minIdle" value="1" /> -->
+<!--         <property name="maxActive" value="20" /> -->
+<!--         <property name="maxWait" value="60000" /> -->
+<!--         <property name="timeBetweenEvictionRunsMillis" value="60000" /> -->
+<!--         <property name="minEvictableIdleTimeMillis" value="300000" /> -->
+<!--         <property name="validationQuery" value="#{'#{jdbc.driver}'=='com.mysql.jdbc.Driver'?'SELECT 1':'SELECT 1 FROM DUAL'}" /> -->
+<!--         <property name="testWhileIdle" value="true" /> -->
+<!--         <property name="testOnBorrow" value="false" /> -->
+<!--         <property name="testOnReturn" value="false" /> -->
+<!--         <property name="poolPreparedStatements" value="true" /> -->
+<!--         <property name="maxPoolPreparedStatementPerConnectionSize" value="20" /> -->
+<!--     </bean> -->
+	
+	<!-- 设置数据库供应商参数,在*mapper.xml中使用 -->
+    <bean id="vendorProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+      <property name="properties">
+        <props>
+            <prop key="MySQL">mysql</prop>
+            <prop key="Oracle">oracle</prop>
+            <prop key="DB2">db2</prop>
+            <prop key="SQL Server">sqlserver</prop>
+        </props>
+      </property>
+    </bean>
+    
+    <!-- 引用数据库供应商参数,在*mapper.xml中使用 -->
+    <bean id="databaseIdProvider"  class="org.apache.ibatis.mapping.VendorDatabaseIdProvider">
+      <property name="properties" ref="vendorProperties"/>
+    </bean>
+	
+	<!-- 数据源1的SqlSessionFactory -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:config/mybatis/SqlMapConfig.xml" />
+        <property name="databaseIdProvider" ref="databaseIdProvider"/>
+    </bean>
+    <!-- 数据源2的SqlSessionFactory -->
+<!--     <bean id="sqlSessionFactory2" class="org.mybatis.spring.SqlSessionFactoryBean"> -->
+<!--         <property name="dataSource" ref="dataSource2"></property> -->
+<!--         <property name="configLocation" value="classpath:config/mybatis/SqlMapConfig.xml" /> -->
+<!--         <property name="databaseIdProvider" ref="databaseIdProvider"/> -->
+<!--     </bean> -->
+    
+    <!-- 数据源1的MapperScannerConfigurer -->
+    <!-- MapperScannerConfigurer:mapper的扫描器，将包下边的mapper接口自动创建代理对象，
+    	自动创建到spring容器中，bean的id是mapper的类名（首字母小写）
+     -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 配置扫描包的路径
+		如果要扫描多个包，中间使用半角逗号分隔
+		要求mapper.xml和mapper.java同名且在同一个目录
+		 -->
+		<property name="basePackage" value="com.cnnct.mapper"/>
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+	</bean>
+	<!-- 数据源2的MapperScannerConfigurer -->
+<!-- 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"> -->
+<!-- 		<property name="basePackage" value="com.cnnct.mapperoracle"/> -->
+<!-- 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory2"/> -->
+<!-- 	</bean> -->
+	<!--============= datasourece配置结束================= -->
+	
+	<!--============= 事务配置开始================= -->
+	<!-- 事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<!-- 数据源2的事务管理器 -->
+<!-- 	<bean id="transactionManager2" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"> -->
+<!-- 		<property name="dataSource" ref="dataSource2"></property> -->
+<!-- 	</bean> -->
+	
+	<!-- 通知 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="*" propagation="REQUIRED"/>
+			<tx:method name="notran*" propagation="NOT_SUPPORTED" />
+		</tx:attributes>
+	</tx:advice>
+	<!-- 数据源2的通知 -->
+<!-- 	<tx:advice id="txAdvice2" transaction-manager="transactionManager2"> -->
+<!-- 		<tx:attributes> -->
+<!-- 			<tx:method name="*" propagation="REQUIRED"/> -->
+<!-- 			<tx:method name="notran*" propagation="NOT_SUPPORTED" /> -->
+<!-- 		</tx:attributes> -->
+<!-- 	</tx:advice> -->
+	
+	<!-- aop -->
+	<!-- expose-proxy属性用于通过ThreadLocal暴露Aop代理对象,使同一service类中事务和非事务混用时生效，用法示例：((BrchServ) AopContext.currentProxy()).test() -->
+	<aop:config expose-proxy="true">
+		<!-- 切入包下面的所有类的所有方法 不管返回值是什么，不管输入参数是什么 -->
+		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.cnnct..*ServImpl.*(..))"/>
+	</aop:config>
+	<!-- 数据源2的aop -->
+<!-- 	<aop:config expose-proxy="true"> -->
+<!-- 		<aop:advisor advice-ref="txAdvice2" pointcut="execution(* com.cnnct..*ServImpl.*(..))"/> -->
+<!-- 	</aop:config> -->
+
+	<!--============= 事务配置结束================= -->
 ```
 
 
