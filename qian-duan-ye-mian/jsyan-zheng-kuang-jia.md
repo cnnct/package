@@ -90,7 +90,6 @@ custom_validate.js为开放给开发人员的文件，主要可以按规则加�
 
 * Form表单验证的清空：
 表单验证配合的表单清空js方法在tag-src/js包下的common.js文件中，代码内容如下：
-// 清空form表单
 
 
 	function formClean($form) {
