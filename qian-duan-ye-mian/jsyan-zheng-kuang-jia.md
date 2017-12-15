@@ -48,12 +48,11 @@ Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下
 									}
 								}
 							},
-
-						submitHandler : function(form) {
-							form.submit();
-						},
-						invalidHandler : function(form) {
-						}
+							submitHandler : function(form) {
+								form.submit();
+							},
+							invalidHandler : function(form) {
+							}
 					});
 	return validator;
 
