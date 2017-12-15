@@ -16,3 +16,9 @@
 ![](/assets/frontDoc_tag4.png)
 介绍标签加载主要工具类TagUtil.java，该类包含标签加载时所需要的常量，需要处理的属性，需要特殊处理的标签类型，以及处理标签属性的主要方法：
 ![](/assets/frontDoc_tag5.png)
+统一处理的标签类：
+![](/assets/frontDoc_tag6.png)
+需要特殊处理的标签类型：
+![](/assets/frontDoc_tag7.png)
+处理标签属性的主要方法：
+![](/assets/frontDoc_tag8.png)
