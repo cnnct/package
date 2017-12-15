@@ -12,6 +12,7 @@ freemarker.xml
 然后加载context-mvc.xml，由此加载：
 ../../baseconfig/spring/springmvc-servlet.xml
 springmvc-servlet.xml
+最后项目启动。
 
 #### web.xml
 
