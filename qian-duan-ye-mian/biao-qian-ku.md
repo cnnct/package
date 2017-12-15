@@ -10,11 +10,11 @@
 * 1.以button标签为例，新增加标签时首先需要创建标签的java文件和ftl模板文件，文件位置如下：![](/assets/frontDoc_tag1.png)
 ![](/assets/frontDoc_tag2.png)
 
-标签java类命名规则，配合ftl模板名，按驼峰命名规则，以Tag结尾，如cas_select_child.ftl对应的java类为casSelectChildTag.java,
+* 2.标签java类命名规则，配合ftl模板名，按驼峰命名规则，以Tag结尾，如cas_select_child.ftl对应的java类为casSelectChildTag.java,
 以ButtonTag.java和button.ftl文件为例介绍标签编写规范：
 ![](/assets/frontDoc_tag3.png)
 ![](/assets/frontDoc_tag4.png)
-介绍标签加载主要工具类TagUtil.java，该类包含标签加载时所需要的常量，需要处理的属性，需要特殊处理的标签类型，以及处理标签属性的主要方法：
+* 3.介绍标签加载主要工具类TagUtil.java，该类包含标签加载时所需要的常量，需要处理的属性，需要特殊处理的标签类型，以及处理标签属性的主要方法：
 ![](/assets/frontDoc_tag5.png)
 统一处理的标签类：
 ![](/assets/frontDoc_tag6.png)
@@ -22,3 +22,6 @@
 ![](/assets/frontDoc_tag7.png)
 处理标签属性的主要方法：
 ![](/assets/frontDoc_tag8.png)
+* 4. 必填属性控制在tag.json文件中,文件位置和规范如下：
+![](/assets/frontDoc_tag9.png)
+![](/assets/frontDoc_tag10.png)
