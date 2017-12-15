@@ -41,7 +41,7 @@
         <searchable keys="true"/> <!--可以根据Key进行查询，查询的Attribute就是keys-->
         <!-- 负载配置③：配置RMI，非负载配置可注释 -->
 <!--         <cacheEventListenerFactory class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"/> -->
-        </cache>
+      </cache>
 ```
 
 
