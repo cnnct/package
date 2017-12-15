@@ -7,7 +7,6 @@
 	if (obj != undefined && obj != "") {
 		var message = "";
 		var title = obj.title;
-
 		if (Object.prototype.toString.call(obj) == "[object Object]") {// 对象类型，排除数组等,包含element对象和普通对象
 			if (typeof (obj) == "object" && obj.length > 0) {// 如果传入的obj为element对象
 				var elementId = obj.attr("id");// 获取对象的id属性值
