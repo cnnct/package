@@ -6,7 +6,7 @@
 文件引用位置如下：
 ![](/assets/frontDoc_validate1.png)
 Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下为：
-jQuery.fn.formValidate = function(obj) {
+	jQuery.fn.formValidate = function(obj) {
 	var validator = $(this)
 			.validate(
 					{
