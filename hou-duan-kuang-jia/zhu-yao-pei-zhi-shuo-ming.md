@@ -69,6 +69,10 @@ freemarker.xml为FreeMarker框架所用。
 
 #### context-mvc.xml
 
+../../baseconfig/spring/springmvc-servlet.xml为Jar包内标签所用。
+
+springmvc-servlet.xml为开发人员配置controller等所用。
+
 ```
 <!-- 导入jar包中的配置文件,不可删除 -->
 <import resource="../../baseconfig/spring/springmvc-servlet.xml"/>
