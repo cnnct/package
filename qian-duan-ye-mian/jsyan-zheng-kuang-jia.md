@@ -6,50 +6,53 @@
 文件引用位置如下：
 ![](/assets/frontDoc_validate1.png)
 Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下为：
+	
+	
 	jQuery.fn.formValidate = function(obj) {
-	var validator = $(this)
-			.validate(
-					{
-						errorElement : 'div',
-						errorClass : 'help-block',
-						focusInvalid : false,
-						ignore : "",
-						rules : obj.rules,
-						messages : obj.messages,
-						highlight : function(e) {
-							$(e).closest('.form-group').removeClass('has-info')
-									.addClass('has-error');
-						},
-						success : function(e) {
-							$(e).closest('.form-group')
-									.removeClass('has-error');// .addClass('has-info');
-							$(e).remove();
-						},
-						errorPlacement : function(error, element) {// 错误时添加提示
-							if (element.is('.select2')) {
-								error
-										.insertAfter(element
-												.siblings('[class*="select2-container"]:eq(0)'));
-							} else if (element.is('select')) {// 选择框类型的标签验证错误
-								error.insertAfter(element);
-							} else if (element.is('.chosen-select')) {
-								error
-										.insertAfter(element
-												.siblings('[class*="chosen-container"]:eq(0)'));
-							} else if (element.is('.cust_file_upload')) {// 文件类型的标签验证错误
-								error.insertAfter(element.parents('span'));
-							} else {
-								error.insertAfter(element.parent());
-								if (element.is('input[type=checkbox]')
-										|| element.is('input[type=radio]')) {
-									element
-											.parent("label")
-											.next(".help-block")
-											.attr("style",
-													"top: 20px; left: 100px; display: block;");
+	
+		var validator = $(this)
+				.validate(
+						{
+							errorElement : 'div',
+							errorClass : 'help-block',
+							focusInvalid : false,
+							ignore : "",
+							rules : obj.rules,
+							messages : obj.messages,
+							highlight : function(e) {
+								$(e).closest('.form-group').removeClass('has-info')
+										.addClass('has-error');
+							},
+							success : function(e) {
+								$(e).closest('.form-group')
+										.removeClass('has-error');// .addClass('has-info');
+								$(e).remove();
+							},
+							errorPlacement : function(error, element) {// 错误时添加提示
+								if (element.is('.select2')) {
+									error
+											.insertAfter(element
+													.siblings('[class*="select2-container"]:eq(0)'));
+								} else if (element.is('select')) {// 选择框类型的标签验证错误
+									error.insertAfter(element);
+								} else if (element.is('.chosen-select')) {
+									error
+											.insertAfter(element
+													.siblings('[class*="chosen-container"]:eq(0)'));
+								} else if (element.is('.cust_file_upload')) {// 文件类型的标签验证错误
+									error.insertAfter(element.parents('span'));
+								} else {
+									error.insertAfter(element.parent());
+									if (element.is('input[type=checkbox]')
+											|| element.is('input[type=radio]')) {
+										element
+												.parent("label")
+												.next(".help-block")
+												.attr("style",
+															"top: 20px; left: 100px; display: block;");
+									}
 								}
-							}
-						},
+							},
 
 						submitHandler : function(form) {
 							form.submit();
@@ -63,26 +66,27 @@ Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下
 
 该方法返回validator对象
 配合该js验证的自定义表单验证，正则表达式验证，以及自定义方法验证的初始化加载js在tag-src/js包下的common.js文件中，内容如下：
-function customValidateRun() {
 
-	for ( var i in customValidate.validateVal) {
-		var message = customValidate.validateVal[i].message;
-		// 如果是正则表达式验证
-		if (customValidate.validateVal[i].regEx != undefined) {
-			jQuery.validator.addMethod(i, function(value, element, param) {
-				var regEx = customValidate.validateVal[param].regEx;
-				return this.optional(element) || (regEx.test(value));
-			}, message);
-		} else if (customValidate.validateVal[i].method != undefined) {// 方法验证
-			jQuery.validator.addMethod(i, function(value, element, param) {
-				var func = customValidate.validateVal[param].method;
-				var flag = func(value);
-				// 创建函数对象，并调用,将对象中callbackData数据传回
-				return this.optional(element) || flag;
-			}, message);
+	function customValidateRun() {
+
+		for ( var i in customValidate.validateVal) {
+			var message = customValidate.validateVal[i].message;
+			// 如果是正则表达式验证
+			if (customValidate.validateVal[i].regEx != undefined) {
+				jQuery.validator.addMethod(i, function(value, element, param) {
+					var regEx = customValidate.validateVal[param].regEx;
+					return this.optional(element) || (regEx.test(value));
+				}, message);
+			} else if (customValidate.validateVal[i].method != undefined) {// 方法验证
+				jQuery.validator.addMethod(i, function(value, element, param) {
+					var func = customValidate.validateVal[param].method;
+					var flag = func(value);
+					// 创建函数对象，并调用,将对象中callbackData数据传回
+					return this.optional(element) || flag;
+				}, message);
+			}
 		}
 	}
-}
 
 该方法将加载resource资源包下的custom_validate.js文件中的内容，
 custom_validate.js为开放给开发人员的文件，主要可以按规则加入验证的正则表达式和自定义的验证方法，相关的内容如下：
