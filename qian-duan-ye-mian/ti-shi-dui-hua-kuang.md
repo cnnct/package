@@ -4,46 +4,46 @@
 	
 		// alert弹框方法
 		function alert(obj) {
-		if (obj != undefined && obj != "") {
-			var message = "";
-			var title = obj.title;
-			if (Object.prototype.toString.call(obj) == "[object Object]") {// 对象类型，排除数组等,包含element对象和普通对象
-				if (typeof (obj) == "object" && obj.length > 0) {// 如果传入的obj为element对象
-					var elementId = obj.attr("id");// 获取对象的id属性值
-					var elementName = obj.attr("name");// 获取对象的name属性值
-					message = "element:" + obj.get(0).tagName;
-					if (elementId != undefined) {// 拼接id信息
-						message = message + ";Id:" + elementId;
+			if (obj != undefined && obj != "") {
+				var message = "";
+				var title = obj.title;
+				if (Object.prototype.toString.call(obj) == "[object Object]") {// 对象类型，排除数组等,包含element对象和普通对象
+					if (typeof (obj) == "object" && obj.length > 0) {// 如果传入的obj为element对象
+						var elementId = obj.attr("id");// 获取对象的id属性值
+						var elementName = obj.attr("name");// 获取对象的name属性值
+						message = "element:" + obj.get(0).tagName;
+						if (elementId != undefined) {// 拼接id信息
+							message = message + ";Id:" + elementId;
+						}
+						if (elementName != undefined) {// 拼接name信息
+							message = message + ";Name:" + elementName;
+						}
+					} else if (obj.message != undefined) {// 有指定message
+						message = obj.message;
+					} else if (typeof (obj) == "object" && obj.message == undefined) {// 普通对象
+						message = toString.call(obj);
 					}
-					if (elementName != undefined) {// 拼接name信息
-						message = message + ";Name:" + elementName;
-					}
-				} else if (obj.message != undefined) {// 有指定message
-					message = obj.message;
-				} else if (typeof (obj) == "object" && obj.message == undefined) {// 普通对象
-					message = toString.call(obj);
+				} else if (Object.prototype.toString.call(obj) == "[object String]") {// 字符类型
+					message = obj;
+				} else {// 其他类型
+					message = Object.prototype.toString.call(obj);
 				}
-			} else if (Object.prototype.toString.call(obj) == "[object String]") {// 字符类型
-				message = obj;
-			} else {// 其他类型
-				message = Object.prototype.toString.call(obj);
+		
+				if (obj.title == undefined) {
+					title = "提示";
+				}
+				bootbox.alert({
+					title : title,
+					message : message,
+					size : "small",
+					callback : obj.callback,
+					buttons : {
+						ok : {
+							label : obj.okBtnName,
+						}
+					},
+				});
 			}
-	
-			if (obj.title == undefined) {
-				title = "提示";
-			}
-			bootbox.alert({
-				title : title,
-				message : message,
-				size : "small",
-				callback : obj.callback,
-				buttons : {
-					ok : {
-						label : obj.okBtnName,
-					}
-				},
-			});
-		}
 		}
 		// confirm弹框方法
 		function confirm(obj) {
