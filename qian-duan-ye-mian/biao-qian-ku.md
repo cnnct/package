@@ -13,3 +13,4 @@
 标签java类命名规则，配合ftl模板名，按驼峰命名规则，以Tag结尾，如cas_select_child.ftl对应的java类为casSelectChildTag.java,
 以ButtonTag.java和button.ftl文件为例介绍标签编写规范：
 ![](/assets/frontDoc_tag3.png)
+![](/assets/frontDoc_tag4.png)
