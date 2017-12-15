@@ -151,7 +151,7 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 
 
 <!--============= datasourece配置开始================= -->
-    <!-- 数据源1 -->
+<!-- 数据源1 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}" />
         <property name="url" value="${jdbc.url}" />
