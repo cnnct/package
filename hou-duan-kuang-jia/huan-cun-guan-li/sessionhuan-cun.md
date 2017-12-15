@@ -2,7 +2,9 @@ session管理，包括redis如果启用时有何配置区别等
 
 #### session缓存
 
-如果启用了redis，那么session缓存将不再存入ehcache，而是redis
+如果启用了redis，那么session缓存将不再存入ehcache，而是redis。
+
+redis缓存需要配置redis服务器，存于硬盘上，所以所存对象必须序列化。
 
 ```
     <!--session缓存，失效时间可设置为15分、20分等均可-->
