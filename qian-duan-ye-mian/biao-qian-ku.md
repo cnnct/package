@@ -9,3 +9,4 @@
 
 * 1.以button标签为例，新增加标签时首先需要创建标签的java文件和ftl模板文件，文件位置如下：![](/assets/frontDoc_tag1.png)
 ![](/assets/frontDoc_tag2.png)
+![](/assets/frontDoc_tag3.png)
