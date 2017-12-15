@@ -147,10 +147,10 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 
 ```
 <!-- spring容器只有第一个context:property-placeholder会生效,后面的都会被忽略,所以加载properties配置文件都写在这里,以","号分隔 -->
-    <context:property-placeholder location="classpath:config/parameter/db.properties,classpath:config/parameter/redis.properties"/>
+<context:property-placeholder location="classpath:config/parameter/db.properties,classpath:config/parameter/redis.properties"/>
 
 
-    <!--============= datasourece配置开始================= -->
+<!--============= datasourece配置开始================= -->
     <!-- 数据源1 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}" />
