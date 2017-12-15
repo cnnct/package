@@ -2,19 +2,13 @@
 
 #### 加载过程：
 
-tomcat启动后，加载web.xml文件，由于web.xml中先配置了spring配置文件，所以先加载context.xml，由此加载：
-../../baseconfig/spring/spring-applicationCore.xml
-../../baseconfig/spring/applicationContext-service.xml
-../../baseconfig/redis.xml
-applicationContext-dao.xml
-applicationContext-service.xml
-freemarker.xml
-Spring初始化数据源和事务以及所有bean,初始化FreeMarker全局配置。
-然后加载context-mvc.xml，由此加载：
-../../baseconfig/spring/springmvc-servlet.xml
-springmvc-servlet.xml
+tomcat启动后，加载web.xml文件，由于web.xml中先配置了spring配置文件，所以先加载context.xml，由此加载： ../../baseconfig/spring/spring-applicationCore.xml ../../baseconfig/spring/applicationContext-service.xml ../../baseconfig/redis.xml applicationContext-dao.xml applicationContext-service.xml freemarker.xml
+
+Spring初始化数据源和事务以及所有bean,初始化FreeMarker全局配置。 然后加载context-mvc.xml，由此加载： ../../baseconfig/spring/springmvc-servlet.xml springmvc-servlet.xml
+
 Spring初始化controller、拦截器等。
-最后项目启动。
+
+ 最后项目启动。
 
 #### web.xml
 
