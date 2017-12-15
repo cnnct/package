@@ -1,7 +1,9 @@
 从web.xml中的dispatcher等配置开始，依次按目录层次所包含的主要配置文件进行说明各配置文件的作用以及主要配置项、加载顺序，包括core包中，和src包中
 
-#### tomcat启动后，加载web.xml文件，由于web.xml中先配置了spring配置文件，所以先加载context.xml，由此加载
-#### ../../baseconfig/spring/spring-applicationCore.xml、../../baseconfig/spring/applicationContext-service.xml、../../baseconfig/redis.xml、applicationContext-dao.xml、applicationContext-service.xml、freemarker.xml
+#### 加载过程：
+
+tomcat启动后，加载web.xml文件，由于web.xml中先配置了spring配置文件，所以先加载context.xml，由此加载
+../../baseconfig/spring/spring-applicationCore.xml、../../baseconfig/spring/applicationContext-service.xml、../../baseconfig/redis.xml、applicationContext-dao.xml、applicationContext-service.xml、freemarker.xml
 
 #### web.xml
 
