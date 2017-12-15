@@ -55,7 +55,6 @@ Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下
 							}
 					});
 	return validator;
-
 }
 
 该方法返回validator对象
