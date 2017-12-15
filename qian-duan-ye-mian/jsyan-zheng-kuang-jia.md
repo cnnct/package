@@ -24,21 +24,16 @@ Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下
 										.addClass('has-error');
 							},
 							success : function(e) {
-								$(e).closest('.form-group')
-										.removeClass('has-error');// .addClass('has-info');
+								$(e).closest('.form-group').removeClass('has-error');// .addClass('has-info');
 								$(e).remove();
 							},
 							errorPlacement : function(error, element) {// 错误时添加提示
 								if (element.is('.select2')) {
-									error
-											.insertAfter(element
-													.siblings('[class*="select2-container"]:eq(0)'));
+									error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
 								} else if (element.is('select')) {// 选择框类型的标签验证错误
 									error.insertAfter(element);
 								} else if (element.is('.chosen-select')) {
-									error
-											.insertAfter(element
-													.siblings('[class*="chosen-container"]:eq(0)'));
+									error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
 								} else if (element.is('.cust_file_upload')) {// 文件类型的标签验证错误
 									error.insertAfter(element.parents('span'));
 								} else {
