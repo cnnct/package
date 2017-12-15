@@ -91,58 +91,68 @@ custom_validate.js为开放给开发人员的文件，主要可以按规则加�
 * Form表单验证的清空：
 表单验证配合的表单清空js方法在tag-src/js包下的common.js文件中，代码内容如下：
 // 清空form表单
-function formClean($form) {
-	// 清除基础对象和验证的相关内容
-	$form.validate().resetForm();
-	// 清除所有hidden的元素的内容
-	var $hiddens = $form.find("input[type=hidden]");
-	$.each($hiddens, function(i) {
-		$hiddens.eq(i).val("");
-	})
-	// 清除树对象
-	var $ztrees = $form.find(" ul.ztree");
-	$.each($ztrees, function(i) {
-		var treeId = $ztrees.eq(i).attr("id");
-		var treeObj = $.fn.zTree.getZTreeObj(treeId);
-		treeObj.checkAllNodes(false);
-	})
-	// 将多选select重置为--请选择--
-	$form.find(".multiselect-selected-text").html("--请选择--");
-	$form.find(" button.multiselect").attr("title", "--请选择--");
-	var $activeLis = $form.find(" ul.multiselect-container li.active");
-	$.each($activeLis, function(i) {
-		$activeLis.eq(i).removeClass("active");
-	});
-	// 清除错误状态
-	var $elements = $form.find(" .has-error");
-	$.each($elements, function(i) {
-		$elements.eq(i).removeClass('has-error');
-	})
-	// 清除textarea
-	var $textareas = $form.find("textarea");
-	$.each($textareas, function(i) {
-		$textareas.eq(i).html("");
-	})
-	// 清除文件上传
-	var $files = $form.find(".file_mult_upload_data");
-	$.each($files, function(i) {
-		var fileId = $files.eq(i).attr("id");
-		var fileData = $("#" + fileId).data();
-		file_mult_upload(fileData);
-	});
-	// 清除ueditor中的内容
-	var $ueditorArea = $form.find(".ueditor-group textarea");
-	$.each($ueditorArea, function(i) {
-		var ueditorId = $ueditorArea.eq(i).siblings('div').attr("id");
-		UE.getEditor(ueditorId).setContent('');
-	});
 
-	// 初始化双向列表
-	var $removeallBtn = $(".bootstrap-duallistbox-container .removeall");
-	$.each($removeallBtn, function(i) {
-		$removeallBtn.eq(i).click();
-	})
 
-}
+	function formClean($form) {
+	
+		// 清除基础对象和验证的相关内容
+		$form.validate().resetForm();
+		
+		// 清除所有hidden的元素的内容
+		var $hiddens = $form.find("input[type=hidden]");
+		$.each($hiddens, function(i) {
+			$hiddens.eq(i).val("");
+		})
+		
+		// 清除树对象
+		var $ztrees = $form.find(" ul.ztree");
+		$.each($ztrees, function(i) {
+			var treeId = $ztrees.eq(i).attr("id");
+			var treeObj = $.fn.zTree.getZTreeObj(treeId);
+			treeObj.checkAllNodes(false);
+		})
+		
+		// 将多选select重置为--请选择--
+		$form.find(".multiselect-selected-text").html("--请选择--");
+		$form.find(" button.multiselect").attr("title", "--请选择--");
+		var $activeLis = $form.find(" ul.multiselect-container li.active");
+		$.each($activeLis, function(i) {
+			$activeLis.eq(i).removeClass("active");
+		});
+		
+		// 清除错误状态
+		var $elements = $form.find(" .has-error");
+		$.each($elements, function(i) {
+			$elements.eq(i).removeClass('has-error');
+		})
+		
+		// 清除textarea
+		var $textareas = $form.find("textarea");
+		$.each($textareas, function(i) {
+			$textareas.eq(i).html("");
+		})
+		
+		// 清除文件上传
+		var $files = $form.find(".file_mult_upload_data");
+		$.each($files, function(i) {
+			var fileId = $files.eq(i).attr("id");
+			var fileData = $("#" + fileId).data();
+			file_mult_upload(fileData);
+		});
+		
+		// 清除ueditor中的内容
+		var $ueditorArea = $form.find(".ueditor-group textarea");
+		$.each($ueditorArea, function(i) {
+			var ueditorId = $ueditorArea.eq(i).siblings('div').attr("id");
+			UE.getEditor(ueditorId).setContent('');
+		});
+	
+		// 初始化双向列表
+		var $removeallBtn = $(".bootstrap-duallistbox-container .removeall");
+		$.each($removeallBtn, function(i) {
+			$removeallBtn.eq(i).click();
+		})
+	
+	}
 表单清空需要清空验证的validator对象，以及需要手动清空的封装对象。
 ![![](/assets/frontDoc_validate1.pn](/assets/frontDoc_validate2.png)g)
