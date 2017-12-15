@@ -40,11 +40,7 @@ Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下
 									error.insertAfter(element.parent());
 									if (element.is('input[type=checkbox]')
 											|| element.is('input[type=radio]')) {
-										element
-												.parent("label")
-												.next(".help-block")
-												.attr("style",
-															"top: 20px; left: 100px; display: block;");
+										element.parent("label").next(".help-block").attr("style","top: 20px; left: 100px; display: block;");
 									}
 								}
 							},
