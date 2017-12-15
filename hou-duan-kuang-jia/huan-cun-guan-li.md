@@ -27,10 +27,10 @@
 <!--            class="net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory"  -->
 <!--            properties="hostName=127.0.0.1,port=40002,socketTimeoutMillis=2000"/>  -->
     <!-- ================负载配置结束=============== -->
-    
+
         <!-- syspara缓存  ,暂定永不失效  -->
-   	<cache name="sysPara"
-		   maxElementsInMemory="10000"
+       <cache name="sysPara"
+           maxElementsInMemory="10000"
            overflowToDisk="false"
            eternal="true"
            timeToIdleSeconds="0"
@@ -38,10 +38,10 @@
            memoryStoreEvictionPolicy="LRU"
            transactionalMode="off"
     >
-    	<searchable keys="true"/> <!--可以根据Key进行查询，查询的Attribute就是keys-->
-    	<!-- 负载配置③：配置RMI，非负载配置可注释 -->
-<!--     	<cacheEventListenerFactory class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"/> -->
-    </cache>
+        <searchable keys="true"/> <!--可以根据Key进行查询，查询的Attribute就是keys-->
+        <!-- 负载配置③：配置RMI，非负载配置可注释 -->
+<!--         <cacheEventListenerFactory class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"/> -->
+        </cache>
 ```
 
 
