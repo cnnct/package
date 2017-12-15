@@ -23,6 +23,11 @@
   </init-param>
   <load-on-startup>1</load-on-startup>
 </servlet>
+
+<servlet-mapping>
+  <servlet-name>springmvc</servlet-name>
+  <url-pattern>/</url-pattern>
+</servlet-mapping>
 ```
 
 配置FreeMarker
@@ -42,7 +47,7 @@
 <import resource="../../baseconfig/spring/spring-applicationCore.xml"/>
 <import resource="../../baseconfig/spring/applicationContext-service.xml"/>
 <!--     <import resource="../../baseconfig/redis.xml"/> -->
-	
+
 <!-- 开发人员可见可修改配置文件，【1.3版本开始，将dao.xml和transation.xml合并到dao.xml中】 -->
 <import resource="applicationContext-dao.xml"/>
 <import resource="applicationContext-service.xml"/>
@@ -54,7 +59,7 @@
 ```
 <!-- 导入jar包中的配置文件,不可删除 -->
 <import resource="../../baseconfig/spring/springmvc-servlet.xml"/>
-	
+
 <!-- 开发人员可见可修改配置文件 -->
 <import resource="springmvc-servlet.xml"/>
 ```
