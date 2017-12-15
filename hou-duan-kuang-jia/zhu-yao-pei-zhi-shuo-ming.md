@@ -81,5 +81,67 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 <import resource="springmvc-servlet.xml"/>
 ```
 
+#### spring-applicationCore.xml
+
+```
+<!-- 配置Jar内标签所用的*Mapper*.java和*Mapper*.xml -->
+<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+  <!-- 配置扫描包的路径
+    如果要扫描多个包，中间使用半角逗号分隔
+    要求mapper.xml和mapper.java同名且在同一个目录 
+  -->
+  <property name="basePackage" value="increator.core.mapper"/>
+  <!-- 使用sqlSessionFactoryBeanName -->
+  <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+</bean>
+    
+<!--     扫描标签库的service和tag注解组件 -->
+<context:component-scan base-package="increator.core.service,com.cnt,increator.core.tag"/>
+   
+<!-- 数据库工具类,用于获取数据库类型 -->
+<bean id="databaseUtil" class= "increator.core.util.DatabaseUtil" init-method="init" lazy-init="false" />
+    
+<!-- 用于Mybatis热部署,开发环境时使用,生产环境通过修改para.properties中的mybatis_refresh为false禁用 -->
+<bean id="mapperRefreshStart" class="increator.base.MapperRefreshStart" init-method="init" />
+```
+
+#### redis.xml
+
+```
+<!-- Redis连接池的配置 -->
+<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig" >
+  <!-- 最大连接数, 默认8个 -->
+  <property name="maxTotal" value="${maxTotal}"/>
+  <!-- 最大空闲连接数, 默认8个-->
+  <property name="maxIdle" value="${maxIdle}"/>
+  <!-- 最大等待毫秒数(如果设置为阻塞时BlockWhenExhausted),如果超时就抛异常, 小于零:阻塞不确定的时间,  默认-1 -->
+  <property name="maxWaitMillis" value="${maxWaitMillis}"/>
+  <!-- 在获取连接的时候检查有效性, 默认false -->
+  <property name="testOnBorrow" value="${testOnBorrow}"/>
+  <!-- 在返回连接的时候检查有效性, 默认false -->
+  <property name="testOnReturn" value="${testOnReturn}"/>
+</bean>
+<!-- redis连接配置，依次为主机ip，端口，是否使用池，(usePool=true时)redis的池配置 -->
+<bean id="jedisConnFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+  <property name="hostName" value="${hostName}"/>
+  <property name="port" value="${port}"/>
+  <property name="usePool" value="${usePool}"/>
+  <property name="poolConfig" ref="jedisPoolConfig"/>
+</bean>
+<!-- redis模板配置 -->
+<bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+  <property name="connectionFactory" ref="jedisConnFactory"/>
+  <property name="keySerializer">
+    <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
+  </property>
+  <property name="valueSerializer">
+    <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
+  </property>
+</bean>
+    
+<!-- redis工厂 -->
+<bean id="RedisFactory" class="com.cnnct.basic.redis.RedisFactory" init-method="init" lazy-init="false"/>
+```
+
 
 
