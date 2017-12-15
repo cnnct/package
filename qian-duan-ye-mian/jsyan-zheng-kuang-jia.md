@@ -83,9 +83,9 @@ function customValidateRun() {
 
 该方法将加载resource资源包下的custom_validate.js文件中的内容，
 custom_validate.js为开放给开发人员的文件，主要可以按规则加入验证的正则表达式和自定义的验证方法，相关的内容如下：
-![](/assets/frontDoc_validate1.png)
 
-	Form表单验证的清空：
+
+* Form表单验证的清空：
 表单验证配合的表单清空js方法在tag-src/js包下的common.js文件中，代码内容如下：
 // 清空form表单
 function formClean($form) {
