@@ -1,4 +1,4 @@
-标签库相关配置总体说明，若新开发一个标签要做哪些步骤等
+![![![](/assets/frontDoc_tag6.pn](/assets/frontDoc_tag8.png)](/assets/frontDoc_tag7.png)g)标签库相关配置总体说明，若新开发一个标签要做哪些步骤等
 
 其它个大的标签要重点说明如何实现，以及若动了源代码，则要列表哪些地方作了调整改造
 
