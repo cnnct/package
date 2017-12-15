@@ -1,5 +1,18 @@
 从web.xml中的dispatcher等配置开始，依次按目录层次所包含的主要配置文件进行说明各配置文件的作用以及主要配置项、加载顺序，包括core包中，和src包中
 
+#### 加载过程：
+
+tomcat启动后，加载web.xml文件，由于web.xml中先配置了spring配置文件，所以先加载context.xml，由此加载：
+../../baseconfig/spring/spring-applicationCore.xml
+../../baseconfig/spring/applicationContext-service.xml
+../../baseconfig/redis.xml
+applicationContext-dao.xml
+applicationContext-service.xml
+freemarker.xml
+然后加载context-mvc.xml，由此加载：
+../../baseconfig/spring/springmvc-servlet.xml
+springmvc-servlet.xml
+
 #### web.xml
 
 配置Spring
@@ -412,98 +425,98 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 #### Jar包内springmvc-servlet.xml
 
 ```
-	<!-- 扫描标签库的Controller组件 -->
+    <!-- 扫描标签库的Controller组件 -->
     <context:component-scan base-package="increator.core.controller"/>
     <!-- 扫描version接口版本控制组件 -->
- 	<context:component-scan base-package="increator.core.util.version"/>
- 	<!-- 扫描BaseC的Controller组件 -->
+     <context:component-scan base-package="increator.core.util.version"/>
+     <!-- 扫描BaseC的Controller组件 -->
     <bean  class="increator.base.BaseC"/>
     <!-- 扫描aspect切面组件 -->
- 	<context:component-scan base-package="increator.base.aspect"/>
-	<mvc:interceptors>
-		<!--登录拦截器-->
-		<mvc:interceptor>
-			<mvc:mapping path="/**"/>
-			<mvc:exclude-mapping path="/interf/**"/>
-			<bean class="increator.base.interceptor.LoginInterceptor"></bean>
-		</mvc:interceptor>
-		<mvc:interceptor>
-			<mvc:mapping path="/**"/>
-			<mvc:exclude-mapping path="/interf/**"/>
-			<bean class="increator.base.interceptor.ServInterceptor"></bean>
-		</mvc:interceptor>
-		<!-- 防重复提交拦截器 -->
-		<mvc:interceptor>
-			<mvc:mapping path="/**"/>
-			<mvc:exclude-mapping path="/interf/**"/>
-			<bean class="increator.base.interceptor.TokenInterceptor">
-				<property name="interceptMethodName" value="del,save,add,update"/><!-- 拦截以这些开头的方法名 -->
-			</bean>
-		</mvc:interceptor>
-	</mvc:interceptors>
-    
-	<!-- don't handle the static resource -->
-	<mvc:default-servlet-handler />
+     <context:component-scan base-package="increator.base.aspect"/>
+    <mvc:interceptors>
+        <!--登录拦截器-->
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/interf/**"/>
+            <bean class="increator.base.interceptor.LoginInterceptor"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/interf/**"/>
+            <bean class="increator.base.interceptor.ServInterceptor"></bean>
+        </mvc:interceptor>
+        <!-- 防重复提交拦截器 -->
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/interf/**"/>
+            <bean class="increator.base.interceptor.TokenInterceptor">
+                <property name="interceptMethodName" value="del,save,add,update"/><!-- 拦截以这些开头的方法名 -->
+            </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
-	<!-- 由于接口版本控制，使用自定义的handleMaping标注，所以需要注释原本的类型转换驱动 -->
-<!-- 	<mvc:annotation-driven conversion-service="conversionService"/> -->
-
-	<!--统一异常处理器-->
-	<bean class="increator.base.exception.CustomExceptionResolver"></bean>
+    <!-- don't handle the static resource -->
+    <mvc:default-servlet-handler />
 
     <!-- 由于接口版本控制，使用自定义的handleMaping标注，所以需要注释原本的类型转换驱动 -->
-<!-- 	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"> -->
-		<!--转换器-->
-<!-- 		<property name="converters"> -->
-<!-- 			<list> -->
-<!-- 				<bean class="increator.base.converter.StringTrimConverter"/> -->
-<!-- 				<bean class="increator.base.converter.CustomDateConverter"/> -->
-<!-- 			</list> -->
-<!-- 		</property> -->
-<!-- 	</bean> -->
+<!--     <mvc:annotation-driven conversion-service="conversionService"/> -->
 
-	<bean id="multipartResolver"  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="defaultEncoding" value="UTF-8"></property>
+    <!--统一异常处理器-->
+    <bean class="increator.base.exception.CustomExceptionResolver"></bean>
+
+    <!-- 由于接口版本控制，使用自定义的handleMaping标注，所以需要注释原本的类型转换驱动 -->
+<!--     <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"> -->
+        <!--转换器-->
+<!--         <property name="converters"> -->
+<!--             <list> -->
+<!--                 <bean class="increator.base.converter.StringTrimConverter"/> -->
+<!--                 <bean class="increator.base.converter.CustomDateConverter"/> -->
+<!--             </list> -->
+<!--         </property> -->
+<!--     </bean> -->
+
+    <bean id="multipartResolver"  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"></property>
 <!--        <property name="maxUploadSize" value="102400000"></property> -->
         <property name="maxUploadSize" value="1073741824"></property><!-- 1G -->
-	</bean>
+    </bean>
 
-	<mvc:resources mapping="/images/**" location="/images/"/>
-	<mvc:resources mapping="/style/**" location="/style/"/>
-	<mvc:resources mapping="/script/**" location="/script/"/>
-	<mvc:resources mapping="/main/**" location="/main/"/>
+    <mvc:resources mapping="/images/**" location="/images/"/>
+    <mvc:resources mapping="/style/**" location="/style/"/>
+    <mvc:resources mapping="/script/**" location="/script/"/>
+    <mvc:resources mapping="/main/**" location="/main/"/>
 
-	<!-- html解析器 -->
-	<bean id="htmlviewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass" value="increator.base.view.HtmlResourceView" />
-		<property name="order" value="0" />
-		<property name="prefix" value="/" />
-		<property name="suffix" value=".html" />
-		<property name="contentType" value="text/html;charset=UTF-8"></property>
-	</bean>
+    <!-- html解析器 -->
+    <bean id="htmlviewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="increator.base.view.HtmlResourceView" />
+        <property name="order" value="0" />
+        <property name="prefix" value="/" />
+        <property name="suffix" value=".html" />
+        <property name="contentType" value="text/html;charset=UTF-8"></property>
+    </bean>
 
-	<!-- freemarker解析器 -->
-	<bean id="freemarkerViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-		<property name="order" value="1" />
-		<property name="contentType" value="text/html; charset=utf-8" />
-		<property name="cache" value="true" />
-		<property name="suffix" value=".ftl" />
-		<property name="requestContextAttribute" value="rc" />
-		<!-- 自定义freemarkerview -->
-		<property name="viewClass" value="increator.base.CnnctFreeMarkerView" />
-	</bean>
-	
-	<!-- 注册XmlViewResolver，用于iReport & JasperReports报表生成 -->
-	<bean id="jasperReportResolver" class="org.springframework.web.servlet.view.XmlViewResolver">
-		<property name="order" value="0" />
-		<property name="location" value="classpath:baseconfig/spring/jasper-views.xml"/>
-	</bean>
+    <!-- freemarker解析器 -->
+    <bean id="freemarkerViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="order" value="1" />
+        <property name="contentType" value="text/html; charset=utf-8" />
+        <property name="cache" value="true" />
+        <property name="suffix" value=".ftl" />
+        <property name="requestContextAttribute" value="rc" />
+        <!-- 自定义freemarkerview -->
+        <property name="viewClass" value="increator.base.CnnctFreeMarkerView" />
+    </bean>
+
+    <!-- 注册XmlViewResolver，用于iReport & JasperReports报表生成 -->
+    <bean id="jasperReportResolver" class="org.springframework.web.servlet.view.XmlViewResolver">
+        <property name="order" value="0" />
+        <property name="location" value="classpath:baseconfig/spring/jasper-views.xml"/>
+    </bean>
 
     <!-- 系统日志切面类 -->
     <bean id="logAspect" class="increator.base.aspect.SysActionLogAspect" />
-	<!-- 开启AOP监听,只对当前配置文件有效 -->
-	<aop:aspectj-autoproxy expose-proxy="true" />
+    <!-- 开启AOP监听,只对当前配置文件有效 -->
+    <aop:aspectj-autoproxy expose-proxy="true" />
     <!-- AOP配置 -->
     <aop:config>
         <aop:aspect id="aspect" ref="logAspect">
@@ -514,21 +527,21 @@ springmvc-servlet.xml为开发人员配置controller等所用。
              <aop:after-throwing pointcut-ref="target" method="doThrowing" throwing="ex"/>
         </aop:aspect>
     </aop:config>
-    
+
     <!-- 接口切面类 -->
     <bean id="serverAspect" class="com.cnnct.interf.aspect.ServerAspect" />
-	<!-- 开启AOP监听,只对当前配置文件有效 -->
-	<aop:aspectj-autoproxy expose-proxy="true" />
+    <!-- 开启AOP监听,只对当前配置文件有效 -->
+    <aop:aspectj-autoproxy expose-proxy="true" />
     <!--  接口切面类配置 -->
     <aop:config>
-		<aop:aspect id="interfServerAspect" ref="serverAspect">
-			<aop:pointcut id="interfServer" expression="execution(* com.cnnct.interf..*Ctrl.*(..)) || execution(* com.cnnct.interf..*Interceptor.*(..))"/>
+        <aop:aspect id="interfServerAspect" ref="serverAspect">
+            <aop:pointcut id="interfServer" expression="execution(* com.cnnct.interf..*Ctrl.*(..)) || execution(* com.cnnct.interf..*Interceptor.*(..))"/>
             <aop:after-throwing pointcut-ref="interfServer" method="doThrowing" throwing="ex"/>  
         </aop:aspect>
     </aop:config>
-    
-	<!-- 用于ueditor注入附件service -->
-	<bean class="com.baidu.ueditor.upload.StorageManager" init-method="getAttachService"/>
+
+    <!-- 用于ueditor注入附件service -->
+    <bean class="com.baidu.ueditor.upload.StorageManager" init-method="getAttachService"/>
 ```
 
 #### springmvc-servlet.xml
@@ -537,7 +550,7 @@ springmvc-servlet.xml为开发人员配置controller等所用。
     <!-- 扫描注解,module为业务所在包 -->
     <context:component-scan base-package="com.cnnct.module" />
     <context:component-scan base-package="com.cnnct.interf.controller" />
-     
+
      <!-- 示例接口拦截器frontEnd  -->
     <mvc:interceptors>
         <mvc:interceptor>
@@ -555,9 +568,9 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 <!--    </mvc:interceptors> -->
 
     <!-- 加载spring定时任务扫描注解驱动,并设置线程池数量,这两个线程池数量(pool-size)最好>=定时任务数量 -->
-	<task:annotation-driven executor="myExecutor" scheduler="myScheduler"/>
-	<task:executor id="myExecutor" pool-size="2"/>
-	<task:scheduler id="myScheduler" pool-size="2"/>
+    <task:annotation-driven executor="myExecutor" scheduler="myScheduler"/>
+    <task:executor id="myExecutor" pool-size="2"/>
+    <task:scheduler id="myScheduler" pool-size="2"/>
     <!-- 指定spring定时任务类所在包 -->
 <!--     <context:component-scan base-package="com.cnnct.task"/> -->
 ```
