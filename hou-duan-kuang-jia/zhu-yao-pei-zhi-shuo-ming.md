@@ -151,7 +151,7 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 
 
 <!--============= datasourece配置开始================= -->
-    <!-- 数据源1 -->
+<!-- 数据源1 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}" />
         <property name="url" value="${jdbc.url}" />
@@ -281,6 +281,132 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 <!--     </aop:config> -->
 
     <!--============= 事务配置结束================= -->
+```
+
+#### applicationContext-service.xml
+
+```
+    <!-- 扫描注解,module为业务所在包 -->
+    <context:component-scan base-package="com.cnnct.module" />
+
+    <!-- ==================== ehcache 开始 ==================== --> 
+    <!-- 错误码缓存 -->
+    <bean id="errCodeProduct" class="com.cnnct.basic.cache.ErrCodeProduct">
+        <property name="errCodeServ" ref="errCodeServ"/>
+    </bean>
+    <bean id="errCodeCacheFactory" class="com.cnnct.basic.cache.factory.ErrCodeCacheFactory" init-method="getCache" lazy-init="false">
+        <property name="errCodeProduct" ref="errCodeProduct"/>
+    </bean>
+    <!-- syscode缓存 -->
+    <bean id="sysCodeProduct" class="com.cnnct.basic.cache.SysCodeProduct">
+        <property name="sysCodeServ" ref="sysCodeServ"/>
+    </bean>
+    <bean id="sysCodeCacheFactory" class="com.cnnct.basic.cache.factory.SysCodeCacheFactory" init-method="getCache" lazy-init="false">
+        <property name="sysCodeProduct" ref="sysCodeProduct"/>
+    </bean>
+    <!-- syspara缓存 -->
+    <bean id="sysParaProduct" class="com.cnnct.basic.cache.SysParaProduct">
+        <property name="sysParaServ" ref="sysParaServ"/>
+    </bean>
+    <bean id="sysParaCacheFactory" class="com.cnnct.basic.cache.factory.SysParaCacheFactory" init-method="getCache" lazy-init="false">
+        <property name="sysParaProduct" ref="sysParaProduct"/>
+    </bean>
+    <!-- trcode缓存 -->
+    <bean id="trCodeProduct" class="com.cnnct.basic.cache.TrCodeProduct">
+        <property name="trCodeServ" ref="trCodeServ"/>
+    </bean>
+    <bean id="trCodeCacheFactory" class="com.cnnct.basic.cache.factory.TrCodeCacheFactory" init-method="getCache" lazy-init="false">
+        <property name="trCodeProduct" ref="trCodeProduct"/>
+    </bean>
+    <!-- reqcode缓存 -->
+    <bean id="reqCodeProduct" class="com.cnnct.basic.cache.ReqCodeProduct">
+        <property name="sysReqcodeServ" ref="sysReqcodeServ"/>
+    </bean>
+    <bean id="reqCodeCacheFactory" class="com.cnnct.basic.cache.factory.ReqCodeCacheFactory" init-method="getCache" lazy-init="false">
+        <property name="reqCodeProduct" ref="reqCodeProduct"/>
+    </bean>
+    <!-- trOrder缓存 -->
+    <bean id="trOrderProduct" class="com.cnnct.basic.cache.TrOrderProduct">
+        <property name="trOrderServ" ref="trOrderServ"/>
+    </bean>
+    <bean id="trOrderCacheFactory" class="com.cnnct.basic.cache.factory.TrOrderCacheFactory" init-method="getCache" lazy-init="false">
+        <property name="trOrderProduct" ref="trOrderProduct"/>
+    </bean>
+    <!-- ==================== ehcache 结束 ==================== -->
+
+    <!-- ==================== 功能接口-start ==================== -->
+    <!-- ===== 系统管理-start ===== -->
+    <!-- base -->
+    <bean id="baseServ" class="com.cnnct.basic.BaseServImpl"/>
+    <!-- 定时任务加锁 -->
+    <bean id="sysTaskLockServ" class="com.cnnct.module.sysmanager.systasklock.SysTaskLockServImpl"/>
+    <!-- 错误码 -->
+    <bean id="errCodeServ" class="com.cnnct.module.sysmanager.errcode.ErrCodeServImpl"/>
+    <!-- syscode -->
+    <bean id="sysCodeServ" class="com.cnnct.module.sysmanager.syscode.SysCodeServImpl"/>
+    <!-- syspara -->
+    <bean id="sysParaServ" class="com.cnnct.module.sysmanager.syspara.SysParaServImpl"/>
+    <!-- 登录接口 -->
+    <bean id="loginServ" class="com.cnnct.module.sysmanager.login.LoginServImpl"/>
+    <!-- 日志接口 -->
+    <bean id="actionLogServ" class="com.cnnct.module.sysmanager.actionlog.ActionLogServImpl"/>
+    <!-- 系统错误日志接口 -->
+    <bean id="sysErrLogServ" class="com.cnnct.module.sysmanager.syserrlog.SysErrLogServImpl"/>
+    <!-- 首页 -->
+    <bean id="indexServ" class="com.cnnct.module.sysmanager.index.IndexServImpl"/>
+    <!-- 操作员管理 -->
+    <bean id="operServ" class="com.cnnct.module.sysmanager.oper.OperServImpl"/>
+    <!-- 部门管理 -->
+    <bean id="brchServ" class="com.cnnct.module.sysmanager.brch.BrchServImpl"/>
+    <!-- 角色管理 -->
+    <bean id="roleServ" class="com.cnnct.module.sysmanager.role.RoleServImpl"/>
+    <!-- 交易代码 -->
+    <bean id="trCodeServ" class="com.cnnct.module.sysmanager.trcode.TrCodeServImpl"/>
+     <!-- 附件表 -->
+    <bean id="attachServ" class="com.cnnct.module.sysmanager.attachment.AttachServImple"/>
+     <!-- 订单状态对应中文码 -->
+    <bean id="trOrderServ" class="com.cnnct.module.sysmanager.trorder.TrOrderServImpl"/>
+     <!-- 接口请求码管理 -->
+    <bean id="sysReqcodeServ" class="com.cnnct.module.sysmanager.reqcode.SysReqcodeServImpl"/>
+     <!-- 页面风格管理 -->
+    <bean id="sysStyleServ" class="com.cnnct.module.sysmanager.style.SysStyleServImpl"/>
+
+    <!-- file -->
+    <bean id="fileServ" class="com.cnnct.module.sysmanager.file.FileServImpl"/>
+    <!-- ===== 系统管理-end ===== -->
+    <!-- ==================== 功能接口-end ==================== -->
+
+    <!-- 接口类service -->
+    <import resource="applicationContext-interfservice.xml"/>
+```
+
+#### freemarker.xml
+
+```
+	<!-- freemarker配置 -->
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPaths">
+            <list>
+                <value>/module/</value>
+                <value>/main/</value>
+                <value>/error/</value>
+                <value>/WEB-INF/demo/</value>
+                <value>/WEB-INF/template/</value>
+            </list>
+        </property>
+        <property name="freemarkerSettings">
+            <props>
+                <prop key="template_update_delay">0</prop>
+                <prop key="default_encoding">UTF-8</prop>
+                <prop key="number_format">0.##########</prop>
+                <prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+                <prop key="date_format">yyyy-MM-dd</prop>
+                <prop key="time_format">HH:mm:ss</prop>
+                <prop key="classic_compatible">true</prop>
+                <prop key="template_exception_handler">ignore</prop>
+            </props>
+        </property>
+    </bean>
 ```
 
 
