@@ -14,3 +14,4 @@
 以ButtonTag.java和button.ftl文件为例介绍标签编写规范：
 ![](/assets/frontDoc_tag3.png)
 ![](/assets/frontDoc_tag4.png)
+介绍标签加载主要工具类TagUtil.java，该类包含标签加载时所需要的常量，需要处理的属性，需要特殊处理的标签类型，以及处理标签属性的主要方法
