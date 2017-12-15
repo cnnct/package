@@ -1,4 +1,8 @@
-Js的form表单验证主要是基于jquery.validate.js插件框架，插件的版本为v1.14.0,
+
+
+##form表单js验证
+
+* Js的form表单验证主要是基于jquery.validate.js插件框架，插件的版本为v1.14.0,
 文件引用位置如下：
 ![](/assets/frontDoc_validate1.png)
 Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下为：
