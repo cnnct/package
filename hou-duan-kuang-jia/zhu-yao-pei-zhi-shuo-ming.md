@@ -47,6 +47,14 @@
 
 #### context.xml
 
+../../baseconfig/spring/spring-applicationCore.xml、../../baseconfig/spring/applicationContext-service.xml为Jar包内标签所用。
+
+../../baseconfig/redis.xml为Redis缓存所用。
+
+applicationContext-dao.xml、applicationContext-service.xml为数据源和事务所用。
+
+freemarker.xml为FreeMarker框架所用。
+
 ```
 <!-- 导入jar包中的配置文件,不可删除 -->
 <import resource="../../baseconfig/spring/spring-applicationCore.xml"/>
