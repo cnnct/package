@@ -54,8 +54,8 @@ Validate初始化加载的js在tag-src/js包下的common.js文件中内容如下
 							invalidHandler : function(form) {
 							}
 					});
-	return validator;
-}
+		return validator;
+	}
 
 该方法返回validator对象
 配合该js验证的自定义表单验证，正则表达式验证，以及自定义方法验证的初始化加载js在tag-src/js包下的common.js文件中，内容如下：
