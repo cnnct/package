@@ -28,7 +28,7 @@
 			       </span>
 			    </div>
 			  </div>
-			</div>
+		</div>
 			<script>
 				$(function() {
 					<#--由于js改变值不能主动触发change事件来配合validate验证，所以需要绑定一下change事件-->
