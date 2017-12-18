@@ -90,7 +90,7 @@ https://oss.sonatype.org/content/repositories/releases/com/github/abel533/EChart
 	    </#if>
 	</script>  
 	
-调用后台获取option的配置：
+（3）调用后台获取option的配置：
 示例如下：
 	 
 	 	//测试echarts
