@@ -14,13 +14,6 @@
 			 <div class="form-group ${size}">
 			    <div class="input-group">
 			       <input type="text" class="form-control" id="${id}show"/>
-			      <#-- 
-			       <span class="input-group-btn">
-			          <button class="btn btn-default" type="button" id="${id}btn" onclick="fileTrggier('${id}')">选择文件</button>
-			       </span>
-			       <input type="file" style="display:none" class="form-control" ${idStr} ${nameStr} onchange="clearTime('${id}')"/>
-			       <input type="hidden"  class="form-control" id="${id}time"/>
-			       -->
 				   <span class="input-group-btn">
 				       <a style="position:relative;display: inline-block;padding: 1px 24px;background:#02abfe;font-size: 12px;overflow: hidden;line-height: 28px;text-align:center;color: #ffffff;border-radius: 2px;cursor: pointer;text-decoration: none;"  href="javascript:void(0);" >选择文件
 				       <input style="position:absolute;left:0;top:0;filter:alpha(opacity=0);opacity:0;cursor: pointer;" type="file"  class="form-control cust_file_upload" ${idStr} ${nameStr} onchange="setFileValue('${id}')"/>
@@ -41,5 +34,7 @@
 				 		formValidator.element($("#"+"${id}"))
 			 		})
 				});
-			</script>
+			</script>			
+* 3.调用该标签时，后台代码需要注意，为了防止ie8和ie9问题，后台中必须加入如下注解接收单文件上传：
+![](/assets/frontDoc_fileUpload1.png)
 		
