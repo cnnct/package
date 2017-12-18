@@ -3,7 +3,7 @@
 第三方echart类库的api文档地址在：
 https://oss.sonatype.org/content/repositories/releases/com/github/abel533/ECharts
 * 2.echart标签组件的ftl模板内容和java内容如下：
-java内容：
+（1）java内容：
 
 			 @Override
 		    public void execute(Environment env, Map params, TemplateModel[] loopVars, TemplateDirectiveBody body)
@@ -42,7 +42,7 @@ java内容：
 		    	}
 		
 		
-ftl模板内容：
+（2）ftl模板内容：
 
 	<div class="form-group ${size} ${positionStr} ">
 		<div id="${id}" style="${style}"></div>
@@ -89,3 +89,45 @@ ftl模板内容：
 		        });
 	    </#if>
 	</script>  
+	
+调用后台获取option的配置：
+示例如下：
+	 
+	 	//测试echarts
+	    @RequestMapping("/echarts")
+	    @ResponseBody
+	    public  Map<String,Object> echartsTest(String test){
+	    	Option option = new Option();
+	        option.title("某楼盘销售情况", "纯属虚构");
+	        option.tooltip().trigger(Trigger.axis);
+	        option.legend("意向", "预购", "成交");
+	        option.toolbox().show(true).feature(Tool.mark,
+	                Tool.dataView,
+	                new MagicType(Magic.line, Magic.bar, Magic.stack, Magic.tiled),
+	                Tool.restore,
+	                Tool.saveAsImage).padding(20);
+	        option.calculable(true);
+	        option.xAxis(new CategoryAxis().boundaryGap(false).data("周一", "周二", "周三", "周四", "周五", "周六", "周日"));
+	        option.yAxis(new ValueAxis());
+	
+	        int sdf=(int)(Math.random()*100);
+	        int sdk=(int)(Math.random()*100);
+	        Line l1 = new Line("成交");
+	        l1.smooth(true).itemStyle().normal().areaStyle().typeDefault();
+	        l1.data(sdf, 12, sdk, 54, 260, 830, 710);
+	
+	        Line l2 = new Line("预购");
+	        l2.smooth(true).itemStyle().normal().areaStyle().typeDefault();
+	        l2.data(sdf+100, sdk+100, 434, 791, 390, 30, 10);
+	
+	        Line l3 = new Line("意向");
+	        l3.smooth(true).itemStyle().normal().areaStyle().typeDefault();
+	        l3.data(sdf+400, sdk+600, 601, 234, 120, 90, 20);
+	
+	        option.series(l1, l2, l3);
+	        
+	        Map<String,Object> dataMap = new HashMap<String,Object>();
+	        String optionStr = GsonUtil.format(option);
+	        dataMap.put("option", optionStr);
+	        return dataMap;
+	    }
