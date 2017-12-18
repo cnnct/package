@@ -96,7 +96,7 @@ https://oss.sonatype.org/content/repositories/releases/com/github/abel533/EChart
 	 	//测试echarts
 	    @RequestMapping("/echarts")
 	    @ResponseBody
-	    public  Map<String,Object> echartsTest(String test){
+	    public  Map<String,Object> echartsTest(String test){//以map方式返回
 	    	Option option = new Option();
 	        option.title("某楼盘销售情况", "纯属虚构");
 	        option.tooltip().trigger(Trigger.axis);
