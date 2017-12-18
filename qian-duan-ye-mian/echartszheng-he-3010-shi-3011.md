@@ -5,7 +5,7 @@ https://oss.sonatype.org/content/repositories/releases/com/github/abel533/EChart
 * 2.echart标签组件的ftl模板内容和java内容如下：
 java内容：
 
-		 @Override
+			 @Override
 		    public void execute(Environment env, Map params, TemplateModel[] loopVars, TemplateDirectiveBody body)
 		            throws TemplateException, IOException {
 		    	//将要校验的属性加入数组
@@ -40,3 +40,50 @@ java内容：
 		    		log.error("echarts标签加载失败："+e.toString());
 		    		e.printStackTrace();
 		    	}
+		
+ftl模板内容：
+<div class="form-group ${size} ${positionStr} ">
+	<div id="${id}" style="${style}"></div>
+</div>
+<script>
+	<#--获取echart对象-->
+    var ${id}_echart = echarts.init(document.getElementById('${id}')); 
+    <#--echart的option配置项-->  
+    var ${id}_option;
+    <#--定时器-->
+	var ${id}_echartInterval; 
+	<#--当需要开启定时器时启动-->
+	<#if intervalFlag=="true">
+		${id}_echartInterval = setInterval(function(){
+	    <#--通过后台获取option配置参数-->
+	    $.ajax({
+	            type : 'POST',
+	            url : '${optionUrl}',
+	            dataType : 'json',
+	            success : function(data) {
+	                 ${id}_option=JSON.parse(data.option);
+					 ${id}_echart.setOption(${id}_option);   
+	            },
+	            error : function() {
+	                alert("系统异常，加载失败");
+	            },
+	        });
+		},${intervalTime?number});
+	        
+	<#else>
+		<#--不需要启动定时器>
+		<#--通过后台获取option配置参数-->
+	    $.ajax({
+	            type : 'POST',
+	            url : '${optionUrl}',
+	            dataType : 'json',
+	            success : function(data) {
+	                 ${id}_option=JSON.parse(data.option);
+					 ${id}_echart.setOption(${id}_option);   
+	            },
+	            error : function() {
+	                alert("系统异常，加载失败");
+	            },
+	        });
+    </#if>
+</script>  
