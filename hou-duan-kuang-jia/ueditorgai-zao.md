@@ -10,5 +10,5 @@ ueditor源码版本，下载地址，以及改造点
     3.将ueditor组件化，易于开发。
 
 前端部分改造：
-    涉及的文件：
+* 涉及的文件：
 ![](/assets/frontDoc_ueditor1.png)
