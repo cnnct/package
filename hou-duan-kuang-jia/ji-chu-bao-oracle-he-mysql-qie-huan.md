@@ -26,3 +26,17 @@
 
 这四个数据库类型，databaseId即是四个prop的值。
 
+在\*Mapper\*.xml文件中：
+
+```
+<select id="getRoleList" parameterType="java.util.HashMap" resultType="java.util.HashMap" databaseId="mysql">
+```
+
+如上所示，在每个select/insert/update/delete等标签写上databaseId="mysql"，表示只有当前数据源是MySQL才会执行这里面的内容。
+
+#### databaseId匹配原理
+
+Mapper接口会根据方法名到对应的xml中寻找id为此方法名的：1.没找到，报错。2.只找到一个
+
+
+
