@@ -8,7 +8,7 @@ Spring初始化数据源和事务以及所有bean,初始化FreeMarker全局配�
 
 Spring初始化controller、拦截器等。
 
- 最后项目启动。
+最后项目启动。
 
 #### web.xml
 
