@@ -8,7 +8,21 @@
 
 #### databaseId
 
+目前配置的有：
 
+```
+<!-- 设置数据库供应商参数,在*mapper.xml中使用 -->
+    <bean id="vendorProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+      <property name="properties">
+        <props>
+            <prop key="MySQL">mysql</prop>
+            <prop key="Oracle">oracle</prop>
+            <prop key="DB2">db2</prop>
+            <prop key="SQL Server">sqlserver</prop>
+        </props>
+      </property>
+    </bean>
+```
 
-
+这四个数据库类型，databaseId即是四个prop的值。
 
