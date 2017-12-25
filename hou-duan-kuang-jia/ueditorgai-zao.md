@@ -22,3 +22,5 @@ ueditor源码版本，下载地址，以及改造点
 * 涉及的文件：
 
 ![](/assets/frontDoc_ueditor2.png)
+
+ueditor模板加载文件：
