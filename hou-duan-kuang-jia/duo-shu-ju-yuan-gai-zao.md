@@ -6,3 +6,5 @@
 
 org.mybatis.generator.api.dom.java.Interface
 
+org.mybatis.generator.config.xml.MyBatisGeneratorConfigurationParser
+
