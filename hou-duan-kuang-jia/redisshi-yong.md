@@ -18,26 +18,28 @@ redis相关配置，jar，以及切换session相关的代码如何实现切换�
     </bean>
     <!-- redis连接配置，依次为主机ip，端口，是否使用池，(usePool=true时)redis的池配置 -->
     <bean id="jedisConnFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
-	    <property name="hostName" value="${hostName}"/>
-	    <property name="port" value="${port}"/>
-	    <property name="usePool" value="${usePool}"/>
-	    <property name="poolConfig" ref="jedisPoolConfig"/>
-	</bean>
+        <property name="hostName" value="${hostName}"/>
+        <property name="port" value="${port}"/>
+        <property name="usePool" value="${usePool}"/>
+        <property name="poolConfig" ref="jedisPoolConfig"/>
+    </bean>
     <!-- redis模板配置 -->
     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
         <property name="connectionFactory" ref="jedisConnFactory"/>
         <property name="keySerializer">
-		  <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
-		</property>
-		<property name="valueSerializer">
-		  <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
-		</property>
+          <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
+        </property>
+        <property name="valueSerializer">
+          <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
+        </property>
     </bean>
-    
+
     <bean id="RedisFactory" class="com.cnnct.basic.redis.RedisFactory" init-method="init" lazy-init="false"/>
 ```
 
 #### redis.properties
+
+下面属性一一对应redis.xml中的属性。
 
 ```
 maxTotal=300
