@@ -1,6 +1,14 @@
 redis相关配置，jar，以及切换session相关的代码如何实现切换等
 
-###### 要想启动redis，首先，将context.xml中的"&lt;import resource="../../baseconfig/redis.xml"/&gt;"解除注释就可以使用redis了，通过RedisUtil工具类对redis进行操作。session默认是缓存在ehcache中的，如果想切换到redis中，将para.properties中的"sessionRedis=false"改为"sessionRedis=true"即可。
+#### jar包
+
+jedis-2.4.2.jar
+
+spring-data-redis-1.3.0.RELEASE.jar
+
+###### 要想启动redis，首先，搭建好redis服务器，然后将context.xml中的"&lt;import resource="../../baseconfig/redis.xml"/&gt;"解除注释就可以使用redis了，通过RedisUtil工具类对redis进行操作。session默认是缓存在ehcache中的，如果想切换到redis中，将para.properties中的"sessionRedis=false"改为"sessionRedis=true"即可。
+
+注：redis中存放的对象必须序列化。
 
 #### redis.xml
 
