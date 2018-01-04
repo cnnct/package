@@ -53,5 +53,13 @@ port=6379
 usePool=true
 ```
 
+#### RedisFactory.java
+
+这是Redis工厂类，所有redis在这里配置。
+
+#### RedisUtil.java
+
+这是Redis工具类，调用Redis，做读取、修改、删除等操作。
+
 
 
