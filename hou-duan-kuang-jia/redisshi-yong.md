@@ -1,6 +1,6 @@
 redis相关配置，jar，以及切换session相关的代码如何实现切换等
 
-#### jar包
+#### 特定jar包
 
 jedis-2.4.2.jar
 
