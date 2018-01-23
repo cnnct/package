@@ -11,3 +11,5 @@
 * 主业务控制文件：
 ![](/assets/frontDoc_interface6.png)
 ![](/assets/frontDoc_interface7.png)
+* 示例：
+![](/assets/frontDoc_interface8.png)
