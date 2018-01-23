@@ -24,7 +24,7 @@ ueditor源码版本，下载地址，以及改造点
 
 ![](/assets/frontDoc_ueditor2.png)
 
-改造的文件有：ActionEnter.java,ConfigManager.java,BinaryUploader.java,StorageManager.java,
+改造主要的文件有：ActionEnter.java,ConfigManager.java,BinaryUploader.java,StorageManager.java等
 
 **三.ueditor模板加载文件：**
  ueditor.ftl和ueditorTag.java
