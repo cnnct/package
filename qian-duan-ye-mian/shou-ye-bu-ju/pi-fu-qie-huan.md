@@ -1,1 +1,4 @@
-皮肤配置对应的css改造，目录等
+# 皮肤切换
+* 涉及的js，css文件：
+
+![](/assets/frontDoc_style1.png)
