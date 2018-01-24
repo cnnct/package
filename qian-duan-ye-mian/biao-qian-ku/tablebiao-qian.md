@@ -9,3 +9,4 @@
 ![](/assets/frontDoc_table1.png)
 ![](/assets/frontDoc_table2.png)
 ![](/assets/frontDoc_table3.png)
+后台对表格数据的封装主要在BaseC.java
