@@ -4,7 +4,7 @@
    cas_select_child.ftl,cas_select_parent.ftl,CasSelectChildTag.java,CasSelectParentTag.java,
    TagCtrl.java,common.js等
 * 加载：
-在初始化组件的时候绑定change方法，来触发每次改变值的数据处理：
+在初始化组件的时候绑定change方法，来触发每次改变值的数据处理，相关common.js内容：
 		$('.parent-select').change(function() {
 				// 获取option的选中值
 				var optionval = $(this).find("option:selected").val();
