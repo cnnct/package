@@ -41,4 +41,5 @@
 * [工作流云平台](gong-zuo-liu-yun-ping-tai.md)
   * [主要配置说明](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming.md)
     * [Activiti整合Spring](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizheng-he-spring.md)
+    * Activiti在线编辑器
 
