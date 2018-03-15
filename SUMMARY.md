@@ -39,5 +39,5 @@
   * [02-java基础包混淆打包](kuang-jia-da-bao/02-javaji-chu-bao-hun-yao-da-bao.md)
   * [03-Ant打包](kuang-jia-da-bao/03-ant-da-bao.md)
 * [工作流云平台](gong-zuo-liu-yun-ping-tai.md)
-  * 主要配置说明
+  * [主要配置说明](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming.md)
 
