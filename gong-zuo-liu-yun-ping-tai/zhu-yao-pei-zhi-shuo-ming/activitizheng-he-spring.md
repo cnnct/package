@@ -1,10 +1,10 @@
-### activiti.cfg.xml
+### 整合步骤：
 
 1、引入如下jar包：
 
 ![](/assets/activiti_1.png)
 
-2、配置Activiti工作流引擎，并在Spring配置文件中引入，详细配置信息：
+2、配置Activiti工作流引擎activiti.cfg.xml，并在Spring配置文件中引入，详细配置信息：
 
 ```
     <!-- 扫描Activiti在线编辑器的跳转@RestController -->
