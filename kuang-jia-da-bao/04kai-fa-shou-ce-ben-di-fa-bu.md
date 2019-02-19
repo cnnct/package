@@ -12,7 +12,7 @@
 
         #access_log  logs/host.access.log  main;
 
-       #公司网站
+       #公司网站，根目录
         location / {
         proxy_pass http://127.0.0.1:90;
         proxy_set_header Host $host;
