@@ -4,6 +4,20 @@
 
 ```
 #配置文件：/usr/local/nginx/nginx.conf
+ server {
+        listen       80;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location / {
+		proxy_pass http://127.0.0.1:90;
+		proxy_set_header Host $host;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+ }
 ```
 
 
