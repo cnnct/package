@@ -4,7 +4,6 @@
 
 ```
 #配置文件：/usr/local/nginx/nginx.conf
-
 ```
 
 
