@@ -19,7 +19,8 @@
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
 
-location /dev_guide/content  {
+        #手册地址映射
+        location /dev_guide/content  {
           alias  /home/soeasy/apps/apache-tomcat-7.0.91/webapps/shouyi_web_mysql/dev_guide/;
           index index.html;
         }
