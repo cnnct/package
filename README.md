@@ -6,6 +6,10 @@
 
 [https://github.com/cnnct/package.git](https://github.com/cnnct/package.git)
 
+# gitbook映射地址：
+
+https://git.gitbook.com/increator/pkg\_guide.git
+
 # gitbook手册地址:
 
 [https://increator.gitbooks.io/pkg\_guide/content](https://increator.gitbooks.io/pgk_guide/content/)
