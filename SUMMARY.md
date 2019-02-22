@@ -23,7 +23,7 @@
   * [并发请求控制【施】！！！！](hou-duan-kuang-jia/bing-fa-qing-qiu-kong-zhi.md)
   * [sql\_key实现说明【陆】！！！](hou-duan-kuang-jia/sqlkey-shi-xian-shuo-ming-3010-lu-3011-ff01-ff01-ff01.md)
 * [前端页面](qian-duan-ye-mian.md)
-  * [标签库](qian-duan-ye-mian/biao-qian-ku.md)
+  * [标签库【施】！挑重点标签补上，旧的更新](qian-duan-ye-mian/biao-qian-ku.md)
     * [table标签【施】！！！](qian-duan-ye-mian/biao-qian-ku/tablebiao-qian.md)
     * [tree类标签【施】！！！](qian-duan-ye-mian/biao-qian-ku/treelei-biao-qian.md)
     * [级联类标签【施】！！！](qian-duan-ye-mian/biao-qian-ku/ji-lian-lei-biao-qian-3010-shi-3011.md)
