@@ -46,7 +46,7 @@
   * [01-静态资源gulp压缩打包](kuang-jia-da-bao/01-jing-tai-zi-yuan-ya-suo-da-bao.md)
   * [02-java基础包混淆打包](kuang-jia-da-bao/02-javaji-chu-bao-hun-yao-da-bao.md)
   * [03-Ant打包](kuang-jia-da-bao/03-ant-da-bao.md)
-  * [04--开发手册本地发布](kuang-jia-da-bao/04kai-fa-shou-ce-ben-di-fa-bu.md)
+  * [04-开发手册本地发布](kuang-jia-da-bao/04kai-fa-shou-ce-ben-di-fa-bu.md)
 * [工作流云平台【陆】！！！](gong-zuo-liu-yun-ping-tai.md)
   * [主要配置说明](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming.md)
     * [Activiti整合Spring](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizheng-he-spring.md)
