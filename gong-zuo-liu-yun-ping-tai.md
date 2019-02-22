@@ -12,7 +12,7 @@
 
 #### 目录结构：
 
+核心目录（activiti）如下：
 
-
-
+![](/assets/activiti5.png)
 
