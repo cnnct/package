@@ -16,5 +16,7 @@
 
 ![](/assets/activiti5.png)
 
-modeler目录中的三个类用于在线流程编辑器。
+modeler目录中的三个类用于在线流程编辑器，用于将原英文界面翻译为中文界面，修改的地方如下：
+
+![](/assets/activiti6.png)
 
