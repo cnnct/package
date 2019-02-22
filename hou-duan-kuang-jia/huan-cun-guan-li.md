@@ -1,3 +1,5 @@
+# ！！！是否有更新！！！
+
 此处理可写一下总体ehcache配置，特别是负载配置
 
 #### ehcache.xml
@@ -47,7 +49,7 @@
 #### redis.xml
 
 ```
-	<!-- Redis连接池的配置 -->
+    <!-- Redis连接池的配置 -->
     <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig" >
         <!-- 最大连接数, 默认8个 -->
         <property name="maxTotal" value="${maxTotal}"/>
@@ -62,22 +64,22 @@
     </bean>
     <!-- redis连接配置，依次为主机ip，端口，是否使用池，(usePool=true时)redis的池配置 -->
     <bean id="jedisConnFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
-	    <property name="hostName" value="${hostName}"/>
-	    <property name="port" value="${port}"/>
-	    <property name="usePool" value="${usePool}"/>
-	    <property name="poolConfig" ref="jedisPoolConfig"/>
-	</bean>
+        <property name="hostName" value="${hostName}"/>
+        <property name="port" value="${port}"/>
+        <property name="usePool" value="${usePool}"/>
+        <property name="poolConfig" ref="jedisPoolConfig"/>
+    </bean>
     <!-- redis模板配置 -->
     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
         <property name="connectionFactory" ref="jedisConnFactory"/>
         <property name="keySerializer">
-		  <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
-		</property>
-		<property name="valueSerializer">
-		  <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
-		</property>
+          <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
+        </property>
+        <property name="valueSerializer">
+          <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
+        </property>
     </bean>
-    
+
     <bean id="RedisFactory" class="com.cnnct.basic.redis.RedisFactory" init-method="init" lazy-init="false"/>
 ```
 
