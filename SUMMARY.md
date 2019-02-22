@@ -25,6 +25,7 @@
   * [sql执行时间打印【施】！！！](hou-duan-kuang-jia/sqlzhi-xing-shi-jian-da-yin.md)
   * [微信公众号、小程序整合【陆】！！！](hou-duan-kuang-jia/wei-xin-gong-zhong-hao-3001-xiao-cheng-xu-zheng-he.md)
   * [登录验证码【陆】！！！](hou-duan-kuang-jia/deng-lu-yan-zheng-ma.md)
+  * [spring事务过滤query方法](hou-duan-kuang-jia/springshi-wuguo-lv-query-fang-fa.md)
 * [前端页面](qian-duan-ye-mian.md)
   * [标签库【施】！挑重点标签补上，旧的更新](qian-duan-ye-mian/biao-qian-ku.md)
     * [table标签【施】！！！](qian-duan-ye-mian/biao-qian-ku/tablebiao-qian.md)
