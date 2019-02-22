@@ -1,3 +1,5 @@
+# ！！！！在源代码基础上做了哪几个类的修改，需要重点说明！！！！！
+
 包括源码的改造点说明，以及源码下载地址，以及我们自己另外实现了先删除再生成的相关改造，相关的类、jar包等
 
 mybatis-generator-core下载：[http://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core](http://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core)
