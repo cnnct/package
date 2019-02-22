@@ -38,7 +38,7 @@
       * [菜单组件【施、陈】](qian-duan-ye-mian/shou-ye-bu-ju/cai-dan-zu-jian.md)
       * [皮肤切换【施、陈】](qian-duan-ye-mian/shou-ye-bu-ju/pi-fu-qie-huan.md)
   * [echarts整合【施】](qian-duan-ye-mian/echartszheng-he.md)
-  * [浏览器多用户登录互斥实现【陆】！！！](qian-duan-ye-mian/liu-lan-qi-duo-yong-hu-deng-lu-hu-chi-shi-xian-3010-lu-3011-ff01-ff01-ff01.md)
+  * [浏览器多用户登录互斥实现【陆】！！！](qian-duan-ye-mian/liu-lan-qi-duo-yong-hu-deng-lu-hu-chi-shi-xian.md)
 * [框架打包](kuang-jia-da-bao.md)
   * [01-静态资源gulp压缩打包](kuang-jia-da-bao/01-jing-tai-zi-yuan-ya-suo-da-bao.md)
   * [02-java基础包混淆打包](kuang-jia-da-bao/02-javaji-chu-bao-hun-yao-da-bao.md)
