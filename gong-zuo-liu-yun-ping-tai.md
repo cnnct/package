@@ -16,3 +16,5 @@
 
 ![](/assets/activiti5.png)
 
+modeler目录中的三个类用于在线流程编辑器。
+
