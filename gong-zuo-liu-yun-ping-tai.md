@@ -40,3 +40,11 @@
 
 ![](/assets/activiti13.png)
 
+1、diagram-viewer目录不用改什么，都是activiti原本的。
+
+2、editor-app目录中的app-cfg.js修改地方如下：
+
+![](/assets/activiti14.png)
+
+就是配置下项目根路径url。
+
