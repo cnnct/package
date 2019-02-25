@@ -32,3 +32,7 @@
 
 ![](/assets/activiti12.png)
 
+1、modeler目录下的stencilset.json用于在线编辑器的翻译，上面说过了。
+
+2、activiti.cfg.xml就是activiti工作流引擎的核心配置文件。
+
