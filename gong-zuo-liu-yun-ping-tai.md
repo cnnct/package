@@ -12,7 +12,7 @@
 
 #### 目录结构：
 
-核心Java类目录（activiti）如下：
+核心Java类目录如下：
 
 ![](/assets/activiti5.png)
 
@@ -28,5 +28,7 @@
 
 3.usergroup目录中的四个类用于用户和用户组配置，其中用户组目前没用到。CustomUserManager类中配置重写了用户查询方法及不验证密码方法。此处四个类需要在activiti.cfg.xml中配置才能使用：
 
-![](/assets/activiti11.png)
+![](/assets/activiti11.png)核心配置目录如下：
+
+![](/assets/activiti12.png)
 
