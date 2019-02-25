@@ -34,5 +34,5 @@
 
 1、modeler目录下的stencilset.json用于在线编辑器的翻译，上面说过了。
 
-2、activiti.cfg.xml就是activiti工作流引擎的核心配置文件。
+2、activiti.cfg.xml就是activiti工作流引擎的核心配置文件，具体配置及功能在配置文件中已经写得很清楚了。
 
