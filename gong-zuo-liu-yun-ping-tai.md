@@ -12,7 +12,7 @@
 
 #### 核心框架目录结构：
 
-一、核心Java类目录如下：
+一、核心框架Java类目录如下：
 
 ![](/assets/activiti5.png)
 
@@ -28,7 +28,7 @@
 
 3、usergroup目录中的四个类用于用户和用户组配置，其中用户组目前没用到。CustomUserManager类中配置重写了用户查询方法及不验证密码方法。此处四个类需要在activiti.cfg.xml中配置才能使用：
 
-![](/assets/activiti11.png)二、核心配置目录如下：
+![](/assets/activiti11.png)二、核心框架配置文件目录如下：
 
 ![](/assets/activiti12.png)
 
@@ -36,7 +36,7 @@
 
 2、activiti.cfg.xml就是activiti工作流引擎的核心配置文件，具体配置及功能在配置文件中已经写得很清楚了。
 
-三、核心Web目录如下：
+三、核心框架Web目录如下：
 
 ![](/assets/activiti13.png)
 
@@ -52,5 +52,5 @@
 
 #### 核心功能目录结构：
 
-
+一、
 
