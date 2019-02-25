@@ -52,5 +52,9 @@
 
 #### 核心功能目录结构：
 
-一、
+一、核心框架Java类目录如下：
+
+![](/assets/activiti16.png)
+
+1、workflow目录下的WorkFlowCommonCtrl就是对外提供所有流程接口的类。
 
