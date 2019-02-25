@@ -12,11 +12,11 @@
 
 #### 目录结构：
 
-核心Java类目录如下：
+一、核心Java类目录如下：
 
 ![](/assets/activiti5.png)
 
-一、modeler目录中的三个类用于在线流程编辑器，用于将英文翻译为中文，都是照着网上复制而来，然后修改的地方如下：
+1、modeler目录中的三个类用于在线流程编辑器，用于将英文翻译为中文，都是照着网上复制而来，然后修改的地方如下：
 
 ![](/assets/activiti6.png)也就是将这个文件的路径修改为我们项目中的实际路径。
 
@@ -24,11 +24,11 @@
 
 ![](/assets/activiti10.png)
 
-二、processimg目录中的两个类用于流程图，用于根据R012接口获取的url来获取流程图文件流。
+2、processimg目录中的两个类用于流程图，用于根据R012接口获取的url来获取流程图文件流。
 
-三、usergroup目录中的四个类用于用户和用户组配置，其中用户组目前没用到。CustomUserManager类中配置重写了用户查询方法及不验证密码方法。此处四个类需要在activiti.cfg.xml中配置才能使用：
+3、usergroup目录中的四个类用于用户和用户组配置，其中用户组目前没用到。CustomUserManager类中配置重写了用户查询方法及不验证密码方法。此处四个类需要在activiti.cfg.xml中配置才能使用：
 
-![](/assets/activiti11.png)核心配置目录如下：
+![](/assets/activiti11.png)二、核心配置目录如下：
 
 ![](/assets/activiti12.png)
 
