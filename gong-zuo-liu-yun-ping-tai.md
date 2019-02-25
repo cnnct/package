@@ -36,3 +36,7 @@
 
 2、activiti.cfg.xml就是activiti工作流引擎的核心配置文件，具体配置及功能在配置文件中已经写得很清楚了。
 
+三、核心Web目录如下：
+
+![](/assets/activiti13.png)
+
