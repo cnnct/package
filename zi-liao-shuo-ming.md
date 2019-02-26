@@ -1,10 +1,10 @@
 # 1、资料说明
 
-## 开发指南
+> ## 开发指南
 
 $svn$/1-文档/09-资料/Activiti5.22.0开发指南.pdf
 
-## 官方示例项目，可直接部署
+> ## 官方示例项目，可直接部署
 
 * #### $svn$/工作流云平台/2-源代码/activiti官方示例项目/activiti-explorer.war
 
@@ -24,7 +24,7 @@ fozzie    fozzie    user
 
 相当于提供一个可以提供调用的基础接口示例，但无页面展示
 
-## 官方源代码
+> ## 官方源代码
 
 * $svn$//2-源代码/activiti官方源代码/Activiti-activiti-5.22.0.zip
 
@@ -32,5 +32,9 @@ fozzie    fozzie    user
 
 # 2、基础规则说明
 
+> ## 流程文件部署
+
 流程文件以bpmn或bpmn20.xml结尾，可以用eclipse中整合的activiti流程图插件绘制保存。
+
+流程 
 
