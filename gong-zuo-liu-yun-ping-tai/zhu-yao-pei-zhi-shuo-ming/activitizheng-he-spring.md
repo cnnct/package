@@ -2,7 +2,13 @@
 
 ![](/assets/activiti_1.png)
 
-## 2、Spring配置文件context.xml中引入Activiti工作流引擎配置：activiti.cfg.xml，详细配置信息：
+## 2、Spring配置文件context.xml中引入Activiti工作流引擎配置：activiti.cfg.xml，
+
+## 
+
+## 3、activiti.cfg.xml详细配置信息：
+
+
 
 ```
     <!-- ======个性化配置===== -->
