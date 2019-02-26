@@ -7,5 +7,7 @@
 
 ## 项目目录说明
 
+![](/assets/activiti_dir_01.png)
+
 
 
