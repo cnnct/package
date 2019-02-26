@@ -1,6 +1,6 @@
 > ### 整合步骤：
 
-## 1、在已整合Activiti流程引擎的基础上，引入如下jar包：
+## 1、在已[整合Activiti流程引擎](/gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizheng-he-spring.md)的基础上，引入如下jar包：
 
 ![](/assets/activiti_2.png)
 
