@@ -16,6 +16,8 @@
 
 实际上只改了一个类，StencilsetRestResource，指定汉化json的路径：/config/activiti/modeler/stencilset.json。
 
+activiti.cfg.xml中相关配置
+
 ```
     <!-- ======个性化配置===== -->
     <!-- 扫描Activiti在线编辑器的跳转@RestController,编辑器汉化 -->
