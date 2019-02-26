@@ -3,9 +3,9 @@
 
 以及上传文件命名规则等，以及与ftp.properties文件的关系
 
+##### 1、控件下载地址
 
+[http://fex.baidu.com/webuploader/](http://fex.baidu.com/webuploader/)
 
-百度上传控件下载地址：http://fex.baidu.com/webuploader/
-
-
+2、
 
