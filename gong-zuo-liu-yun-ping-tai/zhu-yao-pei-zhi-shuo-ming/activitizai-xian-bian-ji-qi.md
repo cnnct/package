@@ -16,7 +16,13 @@
 
 实际上只改了一个类，StencilsetRestResource，指定汉化json的路径：/config/activiti/modeler/stencilset.json。
 
-
+```
+    <!-- ======个性化配置===== -->
+    <!-- 扫描Activiti在线编辑器的跳转@RestController,编辑器汉化 -->
+    <context:component-scan base-package="com.cnnct.module.activiti.modeler" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
+```
 
 ![](/assets/activiti_3.png)
 
