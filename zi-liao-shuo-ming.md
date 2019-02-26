@@ -8,6 +8,16 @@ $svn$/1-文档/09-资料/Activiti5.22.0开发指南.pdf
 
 是工作流管理平台的参考原型，有页面显示，自带在线编辑工具
 
+登录 账号密码，可网上搜索，搜索结果如下：
+
+账号	密码	角色
+
+kermit	kermit	admin
+
+gonzo	gonzo	manager
+
+fozzie	fozzie	user
+
 * #### $svn$/工作流云平台/2-源代码/activiti官方示例项目/activiti-rest.war
 
 相当于提供一个可以提供调用的基础接口示例，但无页面展示
