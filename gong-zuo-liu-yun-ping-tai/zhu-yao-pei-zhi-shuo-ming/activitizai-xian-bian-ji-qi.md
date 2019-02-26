@@ -1,10 +1,6 @@
-### 整合步骤：
+> ### 整合步骤：
 
-eclipse集成编辑器步骤：
-
-使用Install new SoftWare，地址为：[http://activiti.org/designer/update/](qq://txfile/#)
-
-1、在Activiti已整合Spring的基础上，引入如下jar包：
+## 1、在Activiti已整合Spring的基础上，引入如下jar包：
 
 ![](/assets/activiti_2.png)
 
