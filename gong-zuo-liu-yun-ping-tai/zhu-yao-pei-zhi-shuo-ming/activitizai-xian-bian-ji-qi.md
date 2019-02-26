@@ -4,7 +4,9 @@
 
 ![](/assets/activiti_2.png)
 
-## 2、
+## 2、引入流程引擎的web目录
+
+从从示例代码【activiti-explorer】中拷贝：
 
 2、重写后台代码
 
