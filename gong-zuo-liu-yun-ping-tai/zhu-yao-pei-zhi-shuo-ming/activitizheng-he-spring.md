@@ -4,6 +4,8 @@
 
 ## 2、Spring配置文件context.xml中引入Activiti工作流引擎配置：activiti.cfg.xml
 
+![](/assets/activiti14.png)
+
 ```
     <!-- 导入jar包中的配置文件,不可删除 -->
     <import resource="../../baseconfig/spring/spring-applicationCore.xml"/>
