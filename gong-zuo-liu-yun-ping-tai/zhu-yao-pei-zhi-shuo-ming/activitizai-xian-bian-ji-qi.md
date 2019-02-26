@@ -48,5 +48,5 @@ properties-assignment-controller.js中，顶部一段代码是控制调用用户
 
 CustomUserManager.findUserByQueryCriteria，实现UserEntityManager，
 
-流程引擎中自动会调用这个实现类，查询用户信息，原父类是查询本库的用户表信息。
+流程引擎中自动会调用这个实现类，查询用户信息，原父类是查询本数据库的用户表信息。
 
