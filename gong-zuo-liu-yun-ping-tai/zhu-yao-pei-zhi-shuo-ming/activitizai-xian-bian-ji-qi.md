@@ -34,7 +34,7 @@ toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，
 
 ##### ②页面assignment-popup.html中，13行左右，改成下拉列表控件
 
-下拉列表值从该模型对应平台的接口获取，相关表：
+下拉列表值从该模型对应第三方平台的接口获取，相关表：
 
 wf\_sys\_interf\_conf第三方平台接口配置表。
 
