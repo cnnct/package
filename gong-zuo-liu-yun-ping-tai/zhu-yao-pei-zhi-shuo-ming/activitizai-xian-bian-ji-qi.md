@@ -18,6 +18,8 @@
 
 ![](/assets/activiti_3.png)
 
+
+
 * > ## app-cfg.js
 
 修改了contextRoot:window.opener.base，可能给编辑器自己调用请求路径用。
