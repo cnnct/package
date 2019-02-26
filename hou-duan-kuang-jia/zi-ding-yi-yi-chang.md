@@ -12,9 +12,19 @@
 
 如果是普通request请求，会跳转到错误页面，错误页面会根据此处存入的信息，判断是否显示错误页面。
 
-ajax请求和普通request请求分别处理：
+##### ajax请求和普通request请求分别处理：
 
-![](/assets/CustomException1.png)跳转到错误页面：
+![](/assets/CustomException1.png)
+
+##### ajax请求，将异常通过ResultData类实例化，转换成JSON格式的数据，传到页面：
+
+
+
+![](/assets/CustomException3.png)
+
+
+
+##### 跳转到错误页面：
 
 ![](/assets/CustomException2.png)
 
