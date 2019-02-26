@@ -23,7 +23,7 @@
   * [并发请求控制【施】！！！！](hou-duan-kuang-jia/bing-fa-qing-qiu-kong-zhi.md)
   * [sql\_key实现说明【陆】！！！](hou-duan-kuang-jia/sqlkey-shi-xian-shuo-ming.md)
   * [sql执行时间打印【施】！！！](hou-duan-kuang-jia/sqlzhi-xing-shi-jian-da-yin.md)
-  * [微信公众号、小程序整合【陆】！！！](hou-duan-kuang-jia/wei-xin-gong-zhong-hao-3001-xiao-cheng-xu-zheng-he.md)
+  * [微信公众号、小程序整合【彭】！！！](hou-duan-kuang-jia/wei-xin-gong-zhong-hao-3001-xiao-cheng-xu-zheng-he.md)
   * [登录验证码【陆】！！！](hou-duan-kuang-jia/deng-lu-yan-zheng-ma.md)
   * [spring事务过滤query方法](hou-duan-kuang-jia/springshi-wuguo-lv-query-fang-fa.md)
 * [前端页面](qian-duan-ye-mian.md)
