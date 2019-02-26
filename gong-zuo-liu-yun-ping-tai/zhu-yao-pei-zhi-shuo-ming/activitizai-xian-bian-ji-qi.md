@@ -8,6 +8,8 @@
 
 ![](/assets/activiti_4.png)
 
+
+
 ## 3、个性化改造
 
 * > ## 汉化
@@ -18,7 +20,7 @@
 
 ![](/assets/activiti_3.png)
 
-
+![](/assets/activiti6.png)
 
 * > ## app-cfg.js
 
