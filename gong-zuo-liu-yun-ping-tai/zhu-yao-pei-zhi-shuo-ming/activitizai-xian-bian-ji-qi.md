@@ -20,7 +20,7 @@ activiti-modeler.jar的源代码中com.cnnct.module.activiti.modeler包下的三
 
 修改了contextRoot:window.opener.base，可能给编辑器自己调用请求路径用。
 
-编辑器的关闭按钮改造
+* ## 编辑器的关闭按钮改造
 
 toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，原功能是跳转到另一个页面
 
