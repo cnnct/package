@@ -12,7 +12,7 @@
 
 activiti-modeler.jar的源代码中com.cnnct.module.activiti.modeler包下的三个类，activiti官方源代码目录中解压出来，进行修改，
 
-实际上只改了一个类，StencilsetRestResource汉化json的路径：/config/activiti/modeler/stencilset.json。
+实际上只改了一个类，StencilsetRestResource，指定汉化json的路径：/config/activiti/modeler/stencilset.json。
 
 ![](/assets/activiti_3.png)
 
