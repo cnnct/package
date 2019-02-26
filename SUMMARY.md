@@ -56,5 +56,5 @@
   * [流程编辑器改造说明](gong-zuo-liu-yun-ping-tai/biao-jie-gou-shuo-ming/liu-cheng-bian-ji-qi-gai-zao-shuo-ming.md)
   * [项目整合说明](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming.md)
     * [Spring整合Activiti引擎](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizheng-he-spring.md)
-    * [在线模型编辑器整合](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizai-xian-bian-ji-qi.md)
+    * [在线流程编辑器整合](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizai-xian-bian-ji-qi.md)
 
