@@ -28,7 +28,7 @@ fozzie    fozzie    user
 
 * $svn$//2-源代码/activiti官方源代码/Activiti-activiti-5.22.0.zip
 
-我们管理平台中对在线编辑器的汉化有用到源码改造：com.cnnct.module.activiti.modeler包下的三个类，但实际只用到一个类StencilsetRestResource
+我们管理平台中对在线编辑器的汉化有用到源码改造：activiti-modeler.jar中com.cnnct.module.activiti.modeler包下的三个类，但实际只用到一个类StencilsetRestResource
 
 # 2、基础规则说明
 
@@ -66,6 +66,4 @@ fozzie    fozzie    user
 * ##### 任务项
 
 流程实例启动后，会根据活动节点，生成节点的任务项，任务项是与具体操作人绑定。
-
-
 
