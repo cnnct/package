@@ -64,3 +64,5 @@ CustomUserManager.findUserByQueryCriteria，实现UserEntityManager，
 
 流程引擎中自动会调用这个实现类，查询用户信息，原父类是查询本数据库的用户表信息。
 
+
+
