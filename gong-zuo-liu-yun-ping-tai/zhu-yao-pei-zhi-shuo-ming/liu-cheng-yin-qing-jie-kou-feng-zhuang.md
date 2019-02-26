@@ -10,7 +10,7 @@ service：com.cnnct.interf.services.workflow.WorkFlowCommonServImpl
 
 详见[工作流平台接口文档](http://soeasycn.com/api)
 
-## 流程图在第三方平台显示说明，processimg目录中的两个类：
+## 流程图在第三方平台显示说明，processimg包中的两个类：
 
 ctrl：com.cnnct.module.activiti.processimg.ProcessImgCtrl
 
