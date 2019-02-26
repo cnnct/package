@@ -6,6 +6,8 @@ ctrl：com.cnnct.interf.controller.workflow.WorkFlowCommonCtrl
 
 service：com.cnnct.interf.services.workflow.WorkFlowCommonServImpl
 
+
+
 ## 接口功能介绍：
 
 详见[工作流平台接口文档](http://soeasycn.com/api)
