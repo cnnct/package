@@ -56,4 +56,6 @@
   * [项目整合说明](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming.md)
     * [Spring整合Activit流程i引擎](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizheng-he-spring.md)
     * [在线流程编辑器整合](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizai-xian-bian-ji-qi.md)
+    * [流程引擎接口封装](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/liu-cheng-yin-qing-jie-kou-feng-zhuang.md)
+    * 流程管理维护平台
 
