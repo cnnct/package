@@ -40,7 +40,7 @@ activiti.cfg.xml中相关配置
 
 toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，原功能是跳转到另一个页面。
 
-
+![](/assets/activiti21.png)
 
 * > ## 任务派遣小窗口界面修改
 
