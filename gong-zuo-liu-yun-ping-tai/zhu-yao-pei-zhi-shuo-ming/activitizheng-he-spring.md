@@ -1,10 +1,10 @@
-### 整合步骤：
+> ### 整合步骤：
 
-1、引入如下jar包：
+### 1、引入如下jar包：
 
 ![](/assets/activiti_1.png)
 
-2、配置Activiti工作流引擎——activiti.cfg.xml，并在Spring配置文件context.xml中引入，详细配置信息：
+## 2、配置Activiti工作流引擎——activiti.cfg.xml，并在Spring配置文件context.xml中引入，详细配置信息：
 
 ```
     <!-- ======个性化配置===== -->
