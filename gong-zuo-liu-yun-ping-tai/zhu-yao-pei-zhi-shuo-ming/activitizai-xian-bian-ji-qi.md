@@ -22,7 +22,7 @@ activiti-modeler.jar的源代码中com.cnnct.module.activiti.modeler包下的三
 
 * ## 编辑器的关闭按钮改造
 
-toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，原功能是跳转到另一个页面
+toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，原功能是跳转到另一个页面。
 
 将5.22.0版本源代码中activiti-modeler.jar的源代码中的三个java文件复制到项目中，看情况修改。
 
