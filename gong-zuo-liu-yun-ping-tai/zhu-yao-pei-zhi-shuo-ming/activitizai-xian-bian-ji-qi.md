@@ -48,6 +48,8 @@ toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，
 
 ##### ①页面modeler.html中，引入实现搜索下拉列表控件的css、js资源，使用【--lucg】注释的片段
 
+
+
 ##### ②页面assignment-popup.html中，13行左右，改成下拉列表控件
 
 ![](/assets/activiti_22.png)
