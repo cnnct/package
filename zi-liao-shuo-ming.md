@@ -16,3 +16,5 @@ $svn$/1-文档/09-资料/Activiti5.22.0开发指南.pdf
 
 $svn$//2-源代码/activiti官方源代码/Activiti-activiti-5.22.0.zip
 
+我们管理平台中对在线编辑器的汉化有用到源码改造：
+
