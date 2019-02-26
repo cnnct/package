@@ -34,7 +34,10 @@ fozzie    fozzie    user
 
 > ## 流程文件部署
 
-流程文件以bpmn或bpmn20.xml结尾，可以用eclipse中整合的activiti流程图插件绘制保存。
+* 流程文件以bpmn或bpmn20.xml结尾，可以用eclipse中整合的activiti流程图插件绘制保存。
+* 首次部署必须先使用工具绘制完成。
+* 部署方式一：可放到项目指定目录，通过系统启动自动加载部署，加载部署配置在activiti.cfg.xml中的deploymentResources配置荐中配置。启动部署完成后，源文件可移除，或者进行备份后删除。
+* 部署方式二：可通管工作流管理平台上导入部署方式部署，流程文件另外备份留在即可。
 
 
 
