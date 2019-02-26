@@ -32,5 +32,5 @@ fozzie    fozzie    user
 
 # 2、基础规则说明
 
-
+流程文件以bpmn或bpmn20.xml结尾，可以用eclipse中整合的activiti流程图插件绘制保存。
 
