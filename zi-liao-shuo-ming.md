@@ -28,7 +28,9 @@ fozzie    fozzie    user
 
 * $svn$//2-源代码/activiti官方源代码/Activiti-activiti-5.22.0.zip
 
-我们管理平台中对在线编辑器的汉化有用到源码改造：activiti-modeler.jar中com.cnnct.module.activiti.modeler包下的三个类，但实际只用到一个类StencilsetRestResource
+我们管理平台中对在线编辑器的汉化有用到源码改造：activiti-modeler.jar中com.cnnct.module.activiti.modeler包下的三个类，但实际只用到一个类StencilsetRestResource。
+
+> ## eclipse流程编辑器插件
 
 # 2、基础规则说明
 
