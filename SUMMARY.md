@@ -51,7 +51,7 @@
   * [03-Ant打包](kuang-jia-da-bao/03-ant-da-bao.md)
   * [04-开发手册本地发布](kuang-jia-da-bao/04kai-fa-shou-ce-ben-di-fa-bu.md)
 * [工作流云平台【陆】！！！](gong-zuo-liu-yun-ping-tai.md)
-  * [资料说明](zi-liao-shuo-ming.md)
+  * [基础知识](zi-liao-shuo-ming.md)
   * [表结构说明](gong-zuo-liu-yun-ping-tai/biao-jie-gou-shuo-ming.md)
   * [主要配置说明](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming.md)
     * [Activiti整合Spring](gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizheng-he-spring.md)
