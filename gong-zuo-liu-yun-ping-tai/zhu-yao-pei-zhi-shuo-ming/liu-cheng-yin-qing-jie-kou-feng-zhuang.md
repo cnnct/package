@@ -14,5 +14,9 @@ service：com.cnnct.interf.services.workflow.WorkFlowCommonServImpl
 
 ctrl：com.cnnct.module.activiti.processimg.ProcessImgCtrl
 
-提供固定的请求url：http://流程平台IP:端口/应用名/nofunc/getProcessImg/{processKey}
+提供固定的请求url：
+
+/nofunc/getProcessImg/{processKey}：使用流程key作为入参，显示流程定义原图
+
+/getProcessImgWithActivitis/{instanceId}：使用流程实例id作为入参，显示当前流转状态流程图
 
