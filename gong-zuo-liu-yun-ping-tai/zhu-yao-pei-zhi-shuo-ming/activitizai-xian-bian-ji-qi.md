@@ -44,9 +44,11 @@ properties-assignment-controller.js中，顶部一段代码是控制调用用户
 
 * ## 自定义用户、用户组，其中用户组暂未启用，代码中已注释
 
+在activiti.cfg.xml中的customSessionFactories进行配置
+
 CustomUserManager.findUserByQueryCriteria，
 
-实现UserEntityManager，在activiti.cfg.xml中的customSessionFactories进行配置
+实现UserEntityManager，
 
 流程引擎中自动会调用这个实现类，查询用户信息，原父类是查询本库的用户表信息。
 
