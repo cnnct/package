@@ -108,3 +108,13 @@ usePool=true
 
 这是Redis工具类，调用Redis，做读取、修改、删除等操作。
 
+#### Redis启用禁用：
+
+在para.properties文件中配置：
+
+```
+sessionRedis=false
+```
+
+
+
