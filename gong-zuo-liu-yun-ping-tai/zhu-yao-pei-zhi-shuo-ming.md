@@ -11,8 +11,6 @@
 
 ### ![](/assets/activiti_dir_07.png)
 
-
-
 modeler：汉化在线流程编辑器相关类
 
 processimg：第三方系统显示流程图展示接口调用相关类
@@ -33,5 +31,5 @@ stencilset.json：汉化在线流程编辑器配置
 
 ### 3、在线流程编辑器相关
 
-
+![](/assets/activiti_dir_08.png)
 
