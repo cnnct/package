@@ -7,6 +7,8 @@
 
 ## 项目目录说明
 
+* ### 基础
+
 ![](/assets/activiti_dir_05.png)
 
 ![](/assets/activiti_dir_01.png)
