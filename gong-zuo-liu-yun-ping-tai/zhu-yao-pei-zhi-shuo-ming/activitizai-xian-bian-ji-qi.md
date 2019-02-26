@@ -10,7 +10,7 @@
 
 ## 3、个性化改造
 
-* ## 汉化
+* > ## 汉化
 
 5.22.0版本源代码中activiti-modeler.jar中的com.cnnct.module.activiti.modeler包下的三个类，activiti官方源代码目录中解压出来，进行修改，
 
@@ -18,15 +18,15 @@
 
 ![](/assets/activiti_3.png)
 
-* ## app-cfg.js
+* > ## app-cfg.js
 
 修改了contextRoot:window.opener.base，可能给编辑器自己调用请求路径用。
 
-* ## 编辑器的关闭按钮改造
+* > ## 编辑器的关闭按钮改造
 
 toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，原功能是跳转到另一个页面。
 
-* ## 任务派遣小窗口界面修改
+* > ## 任务派遣小窗口界面修改
 
 #### 原来是三个文本框，改成可搜索下拉列表，
 
@@ -44,7 +44,7 @@ wf\_sys\_procdef，第三方平台和流程定义关联
 
 ##### ③properties-assignment-controller.js中，顶部一段代码是控制调用用户查询，触发调用com.cnnct.module.process.model.ModelCtrl.getUserGroup方法，实际是查询第三方系统的提供的用户查询接口ModelServImpl.getUserGroup，第三方接口需要按我们的要求返回，接口api文档有说明。
 
-* ## 自定义用户、用户组，其中用户组暂未启用，代码中已注释
+* > ## 自定义用户、用户组，其中用户组暂未启用，代码中已注释
 
 在activiti.cfg.xml中的customSessionFactories进行配置
 
