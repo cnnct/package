@@ -20,6 +20,12 @@
 
 ![](/assets/CustomException3.png)
 
+##### 页面接收到后台返回信息，就像处理正常返回一样处理返回数据，比如弹出错误信息：
+
+
+
+![](/assets/CustomException4.png)
+
 ##### request请求，直接跳转到错误页面：
 
 ![](/assets/CustomException2.png)
