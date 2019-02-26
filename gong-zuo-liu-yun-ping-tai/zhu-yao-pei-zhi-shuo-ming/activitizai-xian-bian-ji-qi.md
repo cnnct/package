@@ -28,7 +28,7 @@ toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，
 
 * ## 任务派遣小窗口界面修改
 
-> ### 原来是三个文本框，改成可搜索下拉列表，
+##### 原来是三个文本框，改成可搜索下拉列表，
 
 页面位于assignment-popup.html中，13行左右
 
@@ -42,7 +42,7 @@ wf\_sys\_procdef，第三方平台和流程定义关联
 
 properties-assignment-controller.js中，顶部一段代码是控制调用用户查询，触发调用com.cnnct.module.process.model.ModelCtrl.getUserGroup方法，实际是查询第三方系统的提供的用户查询接口ModelServImpl.getUserGroup，第三方接口需要按我们的要求返回，接口api文档有说明。
 
-* 自定义用户、用户组
+* ## 自定义用户、用户组，其中用户组暂未启用，代码中已注释
 
 CustomUserManager.findUserByQueryCriteria，
 
