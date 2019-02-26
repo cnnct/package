@@ -1,10 +1,24 @@
-### 1、在基础框架中引入如下jar包：
+```
+1、在基础框架中引入如下jar包：
+```
 
 ![](/assets/activiti_1.png)
 
 ## 2、Spring配置文件context.xml中引入Activiti工作流引擎配置：activiti.cfg.xml
 
-## 
+```
+        <!-- 导入jar包中的配置文件,不可删除 -->
+	<import resource="../../baseconfig/spring/spring-applicationCore.xml"/>
+	<import resource="../../baseconfig/spring/applicationContext-service.xml"/>
+<!--     <import resource="../../baseconfig/redis.xml"/> -->
+	
+	<!-- 开发人员可见可修改配置文件，【1.3版本开始，将dao.xml和transation.xml合并到dao.xml中】 -->
+	<import resource="applicationContext-dao.xml"/>
+	<import resource="applicationContext-service.xml"/>
+	<import resource="freemarker.xml"/>
+	<!-- =====activiti整合配置===== -->
+	<import resource="../activiti/activiti.cfg.xml"/>
+```
 
 ## 3、activiti.cfg.xml详细配置信息：
 
