@@ -8,7 +8,7 @@
 
 从从示例代码【activiti-explorer】中拷贝：diagram-viewer目录、editor-app目录、modeler.html文件，这三个对象到WebRoot目录中。
 
-2、重写后台代码
+## 3、个性化改改造
 
 将5.22.0版本源代码中activiti-modeler.jar的源代码中的三个java文件复制到项目中，看情况修改。
 
