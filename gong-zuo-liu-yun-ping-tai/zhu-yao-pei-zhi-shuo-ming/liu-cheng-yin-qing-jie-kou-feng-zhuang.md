@@ -6,7 +6,7 @@ ctrl：com.cnnct.interf.controller.workflow.WorkFlowCommonCtrl
 
 service：com.cnnct.interf.services.workflow.WorkFlowCommonServImpl
 
-
+![](/assets/activiti16.png)
 
 ## 接口功能介绍：
 
