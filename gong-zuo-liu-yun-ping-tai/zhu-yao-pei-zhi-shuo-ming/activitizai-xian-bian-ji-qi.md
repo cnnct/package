@@ -4,7 +4,7 @@
 
 ![](/assets/activiti_2.png)
 
-## 2、引入流程编辑器的web目录
+## 2、引入流程编辑器到web目录
 
 从从示例代码【activiti-explorer】中拷贝：diagram-viewer目录、editor-app目录、modeler.html文件，这三个对象到WebRoot目录中。
 
