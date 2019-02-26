@@ -30,7 +30,7 @@ fozzie    fozzie    user
 
 我们管理平台中对在线编辑器的汉化有用到源码改造：com.cnnct.module.activiti.modeler包下的三个类，但实际只用到一个类StencilsetRestResource
 
-# 2、业务规则说明
+# 2、基础规则说明
 
 
 
