@@ -10,6 +10,8 @@
 
 工作流云平台基于：管理平台2.0新框架 + Activiti5.22.0
 
+Activiti官网地址：https://www.activiti.org/
+
 #### 核心框架目录结构：
 
 一、核心框架Java类目录如下：
