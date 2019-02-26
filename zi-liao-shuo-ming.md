@@ -32,6 +32,8 @@ fozzie    fozzie    user
 
 > ## eclipse流程编辑器插件
 
+使用Install new SoftWare，地址为：[http://activiti.org/designer/update/](qq://txfile/#)
+
 # 2、基础规则说明
 
 > ## 流程文件部署
