@@ -1,3 +1,5 @@
+# 1、资料说明
+
 ## 开发指南
 
 $svn$/1-文档/09-资料/Activiti5.22.0开发指南.pdf
@@ -10,13 +12,13 @@ $svn$/1-文档/09-资料/Activiti5.22.0开发指南.pdf
 
 登录 账号密码，可网上搜索，搜索结果如下：
 
-账号	密码	角色
+账号    密码    角色
 
-kermit	kermit	admin
+kermit    kermit    admin
 
-gonzo	gonzo	manager
+gonzo    gonzo    manager
 
-fozzie	fozzie	user
+fozzie    fozzie    user
 
 * #### $svn$/工作流云平台/2-源代码/activiti官方示例项目/activiti-rest.war
 
@@ -27,4 +29,8 @@ fozzie	fozzie	user
 * $svn$//2-源代码/activiti官方源代码/Activiti-activiti-5.22.0.zip
 
 我们管理平台中对在线编辑器的汉化有用到源码改造：com.cnnct.module.activiti.modeler包下的三个类，但实际只用到一个类StencilsetRestResource
+
+# 1、资料说明
+
+
 
