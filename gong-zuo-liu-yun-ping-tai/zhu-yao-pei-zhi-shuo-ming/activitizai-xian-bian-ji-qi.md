@@ -8,7 +8,7 @@
 
 ## 3、个性化改造
 
-> ### 汉化
+* ## 汉化
 
 activiti-modeler.jar的源代码中com.cnnct.module.activiti.modeler包下的三个类，activiti官方源代码目录中解压出来，进行修改，
 
@@ -16,9 +16,9 @@ activiti-modeler.jar的源代码中com.cnnct.module.activiti.modeler包下的三
 
 ![](/assets/activiti_3.png)
 
-app-cfg.js
+* ## app-cfg.js
 
-修改了contextRoot:window.opener.base，可能给自己调用请求路径用。
+修改了contextRoot:window.opener.base，可能给编辑器自己调用请求路径用。
 
 编辑器的关闭按钮改造
 
