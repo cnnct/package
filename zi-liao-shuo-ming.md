@@ -2,7 +2,7 @@
 
 [http://soeasycn.com/api](http://soeasycn.com/api/)
 
-注
+注：若文档地址无法访问，请联系彭敏。
 
 # 2、资料说明
 
