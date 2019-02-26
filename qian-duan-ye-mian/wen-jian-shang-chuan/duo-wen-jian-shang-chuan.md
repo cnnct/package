@@ -9,5 +9,5 @@
 
 ##### 2、修改部分
 
-
+基本上就改了upload.js文件，此文件中代码注释齐全：![](/assets/WebUploader1.png)
 
