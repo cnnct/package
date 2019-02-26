@@ -34,11 +34,13 @@ activiti.cfg.xml中相关配置
 
 修改了contextRoot:window.opener.base，可能给编辑器自己调用请求路径用。
 
-
+![](/assets/activiti14.png)
 
 * > ## 编辑器的关闭按钮改造
 
 toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，原功能是跳转到另一个页面。
+
+
 
 * > ## 任务派遣小窗口界面修改
 
