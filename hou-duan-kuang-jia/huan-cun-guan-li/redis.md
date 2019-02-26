@@ -110,7 +110,7 @@ usePool=true
 
 #### Redis启用禁用：
 
-在para.properties文件中配置：
+在para.properties文件中配置，true启用，false禁用：
 
 ```
 sessionRedis=false
