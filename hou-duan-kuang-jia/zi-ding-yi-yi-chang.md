@@ -18,13 +18,9 @@
 
 ##### ajax请求，将异常通过ResultData类实例化，转换成JSON格式的数据，传到页面：
 
-
-
 ![](/assets/CustomException3.png)
 
-
-
-##### 跳转到错误页面：
+##### request请求，直接跳转到错误页面：
 
 ![](/assets/CustomException2.png)
 
