@@ -8,8 +8,6 @@
 
 ![](/assets/activiti_4.png)
 
-
-
 ## 3、个性化改造
 
 * > ## 汉化
@@ -25,6 +23,8 @@
 * > ## app-cfg.js
 
 修改了contextRoot:window.opener.base，可能给编辑器自己调用请求路径用。
+
+
 
 * > ## 编辑器的关闭按钮改造
 
