@@ -1,5 +1,3 @@
-
-
 # 1、在基础框架中引入如下jar包：
 
 ![](/assets/activiti_1.png)
