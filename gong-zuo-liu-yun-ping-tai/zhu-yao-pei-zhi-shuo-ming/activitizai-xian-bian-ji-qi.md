@@ -30,7 +30,7 @@ toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，
 
 #### 原来是三个文本框，改成可搜索下拉列表，
 
-①页面modeler.html中，引入实现搜索下拉列表控件的css、js资源，使用【--lucg】注释的片段
+##### ①页面modeler.html中，引入实现搜索下拉列表控件的css、js资源，使用【--lucg】注释的片段
 
 ##### ②页面assignment-popup.html中，13行左右，改成下拉列表控件
 
@@ -43,8 +43,7 @@ wf\_def\_model，定义和模型关联表
 wf\_sys\_procdef，第三方平台和流程定义关联
 
 1. ##### properties-assignment-controller.js中，顶部一段代码是控制调用用户查询，触发调用com.cnnct.module.process.model.ModelCtrl.getUserGroup方法，实际是查询第三方系统的提供的用户查询接口ModelServImpl.getUserGroup，第三方接口需要按我们的要求返回，接口api文档有说明。
-
-* ## 自定义用户、用户组，其中用户组暂未启用，代码中已注释
+2. ## 自定义用户、用户组，其中用户组暂未启用，代码中已注释
 
 在activiti.cfg.xml中的customSessionFactories进行配置
 
