@@ -1,6 +1,6 @@
 > ### 整合步骤：
 
-## 1、在Activiti已整合Spring的基础上，引入如下jar包：
+## 1、在已整合Activiti流程引擎的基础上，引入如下jar包：
 
 ![](/assets/activiti_2.png)
 
