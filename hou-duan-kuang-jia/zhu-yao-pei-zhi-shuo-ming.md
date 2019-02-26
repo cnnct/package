@@ -576,5 +576,9 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 <!--     <context:component-scan base-package="com.cnnct.task"/> -->
 ```
 
+##### 事务过滤查询方法配置
+
+![](/assets/Main1.png)
+
 
 
