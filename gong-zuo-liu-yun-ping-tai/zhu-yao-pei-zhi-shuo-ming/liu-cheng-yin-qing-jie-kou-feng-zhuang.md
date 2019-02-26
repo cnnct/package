@@ -16,7 +16,7 @@ ctrl：com.cnnct.module.activiti.processimg.ProcessImgCtrl
 
 提供固定的请求url：
 
-/nofunc/getProcessImg/{processKey}：使用流程key作为入参，显示流程定义原图
+/nofunc/getProcessImg/{processKey}：使用流程key作为入参，显示流程定义原图
 
 /getProcessImgWithActivitis/{instanceId}：使用流程实例id作为入参，显示当前流转状态流程图
 
