@@ -8,6 +8,10 @@
 
 > ### 开发指南
 
+工作流云平台基于：管理平台2.0新框架 + Activiti5.22.0
+
+Activiti官网地址：[https://www.activiti.org/](https://www.activiti.org/)
+
 > ### 开发指南
 
 $svn$/1-文档/09-资料/Activiti5.22.0开发指南.pdf
