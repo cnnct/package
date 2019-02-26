@@ -1,5 +1,3 @@
-> # 整合步骤：
-
 ### 1、引入如下jar包：
 
 ![](/assets/activiti_1.png)
