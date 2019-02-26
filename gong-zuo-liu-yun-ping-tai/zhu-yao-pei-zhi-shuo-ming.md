@@ -15,7 +15,7 @@ modeler：汉化在线流程编辑器相关类
 
 processimg：第三方系统显示流程图展示接口调用相关类
 
-usergroup：自定义用户、用户组，暂时用到用户相关
+usergroup：自定义用户、用户组，暂时用到用户相关，用户组暂未使用到
 
 ![](/assets/activiti_dir_01.png)
 
