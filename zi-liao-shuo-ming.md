@@ -1,4 +1,8 @@
-# 1、资料说明
+# 1、工作流平台对外接口文档
+
+
+
+# 2、资料说明
 
 > ## 开发指南
 
@@ -34,7 +38,7 @@ fozzie    fozzie    user
 
 使用Install new SoftWare，地址为：[http://activiti.org/designer/update/](qq://txfile/#)
 
-# 2、基础规则说明
+# 3、基础规则说明
 
 > ## 流程文件部署
 
