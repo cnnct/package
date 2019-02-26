@@ -40,8 +40,6 @@ wf\_def\_model，定义和模型关联表
 
 wf\_sys\_procdef，第三方平台和流程定义关联
 
-页面位于assignment-popup.html中
-
 properties-assignment-controller.js中，顶部一段代码是控制调用用户查询，触发调用com.cnnct.module.process.model.ModelCtrl.getUserGroup方法，实际是查询第三方系统的提供的用户查询接口ModelServImpl.getUserGroup，第三方接口需要按我们的要求返回，接口api文档有说明。
 
 CustomUserManager.findUserByQueryCriteria，
