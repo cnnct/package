@@ -26,5 +26,27 @@
 
 toolbar-default-actions.js，263行，改成点关闭按钮为关闭本窗口，原功能是跳转到另一个页面。
 
+* ## 任务派遣小窗口界面修改
 
+> ### 原来是三个文本框，改成可搜索下拉列表，
+
+页面位于assignment-popup.html中，13行左右
+
+下拉列表从该模型对应平台的接口获取，相关表：
+
+wf\_sys\_interf\_conf第三方平台接口配置表。
+
+wf\_def\_model，定义和模型关联表
+
+wf\_sys\_procdef，第三方平台和流程定义关联
+
+页面位于assignment-popup.html中
+
+properties-assignment-controller.js中，顶部一段代码是控制调用用户查询，触发调用com.cnnct.module.process.model.ModelCtrl.getUserGroup方法，实际是查询第三方系统的提供的用户查询接口ModelServImpl.getUserGroup，第三方接口需要按我们的要求返回，接口api文档有说明。
+
+CustomUserManager.findUserByQueryCriteria，
+
+实现UserEntityManager，在activiti.cfg.xml中的customSessionFactories进行配置
+
+流程引擎中自动会调用这个实现类，查询用户信息，原父类是查询本库的用户表信息。
 
