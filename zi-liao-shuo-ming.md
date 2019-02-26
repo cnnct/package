@@ -47,7 +47,15 @@ fozzie    fozzie    user
 
 * ##### 流程模型（也叫流程模板）
 
-从流程定义中
+从流程定义中新转换派生出模型，目的是在流程版本上进行少量调整后，再重新部署，用以生成新版本的流程定义，方便流程管理员维护操作，而不需要开发人员干预。
 
-![](D:/Program%20Files/Youdao/YoudaoNote/data/iceaugust@163.com/8e9d446e5a5f4fed8da39e666c60e700/clipboard.png)
+在流程定义菜单中，【查看详情】，
+
+模态框显示该定义各版本信息列表，再用【流程定义模板】，弹出新tab页，显示该定义的模板列表，如下图所示：
+
+![](D:/Program Files/Youdao/YoudaoNote/data/iceaugust@163.com/8e9d446e5a5f4fed8da39e666c60e700/clipboard.png)这里可以新增，也可以修改，会打开一个模型编辑器。
+
+新增是沿用原流程定义的相关属性，新生成模型数据。
+
+也可以修改，修改保存后，模型版本并无增加。
 
