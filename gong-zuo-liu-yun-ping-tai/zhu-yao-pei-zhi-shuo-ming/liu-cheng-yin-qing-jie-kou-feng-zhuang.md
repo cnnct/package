@@ -12,5 +12,7 @@ service：com.cnnct.interf.services.workflow.WorkFlowCommonServImpl
 
 ## 流程图在第三方平台显示说明：
 
+ctrl：com.cnnct.module.activiti.processimg.ProcessImgCtrl
 
+提供固定的请求url：http://流程平台IP:端口/应用名/nofunc/getProcessImg/{processKey}
 
