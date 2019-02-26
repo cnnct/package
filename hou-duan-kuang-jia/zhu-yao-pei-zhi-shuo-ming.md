@@ -578,7 +578,5 @@ springmvc-servlet.xml为开发人员配置controller等所用。
 
 ##### 事务过滤查询方法配置
 
-![](/assets/Main1.png)
-
-
+&lt;tx:method name="query\*" propagation="NOT\_SUPPORTED" /&gt;其中，name的值就是要过滤的方法名前缀再加上\*即可，propagation="NOT\_SUPPORTED"表示不使用事务的意思。![](/assets/Main1.png)
 
