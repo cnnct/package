@@ -16,7 +16,7 @@
 
 实际上只改了一个类，StencilsetRestResource，指定汉化json的路径：/config/activiti/modeler/stencilset.json。
 
-
+![](/assets/activiti10.png)
 
 ![](/assets/activiti_3.png)
 
