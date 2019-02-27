@@ -23,7 +23,7 @@ stencilset.json：汉化在线流程编辑器配置
 
 ![](/assets/activiti_dir_01.png)
 
-### 3、管理维护平台相关目录
+### 3、管理维护平台相关文件目录
 
 ![](/assets/activiti_dir_02.png)
 
