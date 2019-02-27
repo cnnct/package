@@ -21,7 +21,7 @@ stencilset.json：线流程编辑器汉化转换配置；
 
 * ### 2、接口平台封装相关文件目录
 
-### 注
+> #### 注：接口平台封装，详见章节：[流程引擎接口封装](/gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/liu-cheng-yin-qing-jie-kou-feng-zhuang.md)
 
 ![](/assets/activiti_dir_01.png)WorkFlowComonCtrl.java：接口服务的Ctrl；
 
