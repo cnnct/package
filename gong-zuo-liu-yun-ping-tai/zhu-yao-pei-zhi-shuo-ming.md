@@ -57,9 +57,9 @@ process/task：流程任务管理。
 
 ![](/assets/activiti_dir_08.png)
 
-modeler.html：在线流程编辑器首页
+modeler.html：在线流程编辑器首页，已做个性化改造
 
-diagram-viewer、editor-app：在线编辑器自带，原目录拷贝过来
+diagram-viewer、editor-app：在线编辑器自带，原目录拷贝过来，已做个性化改造
 
 #### 
 
