@@ -17,11 +17,13 @@ processimg：第三方系统显示流程图展示接口调用相关类
 
 usergroup：自定义用户、用户组，暂时用到用户相关，用户组暂未使用到st
 
-stencilset.json：汉化在线流程编辑器配置
+stencilset.json：线流程编辑器汉化转换配置
 
 * ### 2、接口平台封装相关文件目录
 
 ![](/assets/activiti_dir_01.png)
+
+
 
 ### 3、管理维护平台相关文件目录
 
