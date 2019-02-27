@@ -21,6 +21,8 @@ stencilset.json：线流程编辑器汉化转换配置；
 
 * ### 2、接口平台封装相关文件目录
 
+### 注
+
 ![](/assets/activiti_dir_01.png)WorkFlowComonCtrl.java：接口服务的Ctrl；
 
 WorkFlowInterceptor.java：接口服务拦截器；
