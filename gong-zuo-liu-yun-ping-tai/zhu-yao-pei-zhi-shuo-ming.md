@@ -59,7 +59,7 @@ process/task：流程任务管理。
 
 modeler.html：在线流程编辑器首页
 
-diagram-viewer、editor-app：在线编辑器自带，拷贝过来
+diagram-viewer、editor-app：在线编辑器自带，原目录拷贝过来
 
 #### 
 
