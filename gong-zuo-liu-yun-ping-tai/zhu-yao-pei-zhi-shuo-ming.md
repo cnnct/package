@@ -47,6 +47,8 @@ process/reports：报表管理；
 
 process/task：流程任务管理。
 
+注注：管理维平台详细说明，详见章节：[工作流管理维护平台](/gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/liu-cheng-guan-li-wei-hu-ping-tai-3010-shi-3011.md)
+
 ### 3、在线流程编辑器相关文件目录
 
 ![](/assets/activiti_dir_08.png)
@@ -56,4 +58,6 @@ modeler.html：在线流程编辑器首页
 diagram-viewer、editor-app：在线编辑器自带，拷贝过来
 
 #### 注：在线流程编辑器个性化改造，详见章节：[在线编辑编辑器整合](/gong-zuo-liu-yun-ping-tai/zhu-yao-pei-zhi-shuo-ming/activitizai-xian-bian-ji-qi.md)
+
+
 
