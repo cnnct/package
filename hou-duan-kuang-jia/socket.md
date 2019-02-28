@@ -10,5 +10,5 @@
 
 3、在初始化类SocketServerInitializer中创建接收返回数据类的bean进行数据处理：
 
-
+![](/assets/socket3.png)
 
