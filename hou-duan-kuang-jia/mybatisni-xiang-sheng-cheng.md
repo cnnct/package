@@ -4,6 +4,8 @@
 
 mybatis-generator-core下载：[http://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core](http://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core)
 
+# 注：普通类型的实体类、Mapper接口、xml文件与custom类型的生成原理过程基本上不相干。普通类型用的是mybatis-generator-core-1.3.2.jar【为了多数据源改造了，在Mapper接口加上注释@Component\("自定义bean名称"\)】，而custom类型完全是自己写的代码，在GeneratorSqlmap类中。
+
 #### 特定jar包
 
 mybatis-generator-core-1.3.2.jar
