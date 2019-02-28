@@ -24,7 +24,7 @@ mybatis\_refresh\_info使用Json格式，key为SqlSessionFactoryBean的beanName�
 
 1、在spring-applicationCore.xml中配置MapperRefreshStart的bean，并设置初始化方法init。
 
-2、MapperRefreshStart中的init方法根据para.properties配置文件中的数据源bean名称获取SqlSessionFactory配置，并在启动动态刷新类MapperRefresh时传入，同时传入配置文件配置中的包目录。
+2、MapperRefreshStart中的init方法根据para.properties配置文件中的数据源bean名称获取SqlSessionFactory配置，并在启动动态刷新类MapperRefresh时传入。
 
-3、动态刷新类MapperRefresh和获取所有
+3、动态刷新类MapperRefresh和获取SqlSessionFactory中所有的Mybatis类型的xml文件后，启动线程无限循环遍历所有文件，将最后修改时间与第一次MapperRefresh类时记录的时间beforeTime进行对比，如果最后修改时间大于beforeTime，那么在重新编译加载这些文件后，将此时的时间赋给beforeTime，并进行下一次循环对比。
 
