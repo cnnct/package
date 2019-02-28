@@ -21,7 +21,9 @@
 
 ![](/assets/WebUploader2.png)
 
-##### 
+##### 4、js等文件目录
+
+![](/assets/webuploader.png)
 
 
 
