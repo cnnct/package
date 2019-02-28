@@ -20,3 +20,9 @@ mybatis\_refresh\_info使用Json格式，key为SqlSessionFactoryBean的beanName�
 
 此类为mybatis动态刷新的逻辑实现类，根据para.properties中配置"mybatis\_refresh"的值来判断是否启动动态刷新。
 
+#### 流程原理
+
+1、
+
+
+
