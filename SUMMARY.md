@@ -36,6 +36,7 @@
     * [级联类标签【施】！！！](qian-duan-ye-mian/biao-qian-ku/ji-lian-lei-biao-qian-3010-shi-3011.md)
     * [button标签【施】！！！](qian-duan-ye-mian/biao-qian-ku/buttonbiao-qian.md)
     * [button\_group标签【施】！！！](qian-duan-ye-mian/biao-qian-ku/buttongroup-biao-qian.md)
+    * [时间类标签](qian-duan-ye-mian/biao-qian-ku/shi-jian-lei-biao-qian.md)
   * [提示对话框【施】](qian-duan-ye-mian/ti-shi-dui-hua-kuang.md)
   * [form表单js验证框架【施】](qian-duan-ye-mian/jsyan-zheng-kuang-jia.md)
   * [文件上传【施】！！！](qian-duan-ye-mian/wen-jian-shang-chuan.md)
