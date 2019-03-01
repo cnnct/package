@@ -26,7 +26,8 @@
   ![](/assets/interface_version2.png)
   ![](/assets/interface_version3.png)
 *接口日志部分：
-  1.
+  1.接口日志记录过程：
+  ![](/assets/interface_version5.png)
 * 示例：
   ![](/assets/frontDoc_interface8.png)
 
