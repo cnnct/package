@@ -25,6 +25,8 @@
   2.版本业务主代码：
   ![](/assets/interface_version2.png)
   ![](/assets/interface_version3.png)
+*接口日志部分：
+  1.
 * 示例：
   ![](/assets/frontDoc_interface8.png)
 
