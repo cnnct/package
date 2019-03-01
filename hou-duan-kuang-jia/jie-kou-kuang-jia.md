@@ -16,7 +16,8 @@
   ![](/assets/frontDoc_interface6.png)
   ![](/assets/frontDoc_interface7.png)
 * 接口版本控制部分：
-  
+  1.配置文件
+  ![](/assets/interface_version1.png)
 * 示例：
   ![](/assets/frontDoc_interface8.png)
 
