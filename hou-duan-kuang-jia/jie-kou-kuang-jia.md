@@ -13,9 +13,10 @@
   ![](/assets/frontDoc_interface5.png)
   ![](/assets/frontDoc_interface4.png)
 * 主业务控制文件：
+  1.文件：
   ![](/assets/frontDoc_interface6.png)
   ![](/assets/frontDoc_interface7.png)
-  版本加载：
+  2.版本加载：
   ![](/assets/interface_version4.png)
 * 接口版本控制部分：
   1.配置文件
