@@ -19,7 +19,8 @@
   1.配置文件
   ![](/assets/interface_version1.png)
   2.版本主代码：
-  
+  ![](/assets/interface_version2.png)
+  ![](/assets/interface_version3.png)
 * 示例：
   ![](/assets/frontDoc_interface8.png)
 
