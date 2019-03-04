@@ -7,4 +7,12 @@
 2.以上第一种组合说明：
 * 页面加载级联组件，传入参数到后台：
 ![](/assets/cas_1.png)
-* 
+* 根据传入的参数初始化加载组件：
+parent标签：
+![](/assets/cas_2.png)
+child标签：
+![](/assets/cas_3.png)
+* 点击的时候加载（common.js）：
+为parent-select和child-select属性绑定change事件：
+![](/assets/cas_5.png)
+![](/assets/cas_6.png)
