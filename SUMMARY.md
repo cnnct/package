@@ -26,7 +26,7 @@
   * [sql\_key实现说明【施】！！！](hou-duan-kuang-jia/sqlkey-shi-xian-shuo-ming.md)
   * [sql执行打印日志【施】！！！](hou-duan-kuang-jia/sqlzhi-xing-shi-jian-da-yin.md)
   * [微信公众号、小程序整合【彭】！！！](hou-duan-kuang-jia/wei-xin-gong-zhong-hao-3001-xiao-cheng-xu-zheng-he.md)
-  * [登录验证码【陆】！！！](hou-duan-kuang-jia/deng-lu-yan-zheng-ma.md)
+  * [登录验证码【施】！！！](hou-duan-kuang-jia/deng-lu-yan-zheng-ma.md)
   * [spring事务过滤query方法](hou-duan-kuang-jia/springshi-wuguo-lv-query-fang-fa.md)
   * [socket](hou-duan-kuang-jia/socket.md)
 * [前端页面](qian-duan-ye-mian.md)
