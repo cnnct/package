@@ -16,3 +16,4 @@
 * 后台加载绘制验证码：
 
 ![](/assets/vercode_4.png)
+![](/assets/vercode_5.png)
