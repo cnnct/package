@@ -26,7 +26,7 @@
   2.版本业务主代码：
   ![](/assets/interface_version2.png)
   ![](/assets/interface_version3.png)
-*接口日志部分：
+* 接口日志部分：
   1.接口日志记录过程：
   通过接口开关配置可以获取是否开启接口日志记录，如果要记录接口日志，
   将根据sys_para表中配置的参数决定记录日志的规则
