@@ -36,3 +36,6 @@ ueditor源码版本，下载地址，以及改造点
 * 涉及文件：
 
 ![](/assets/ueditor_2.png)
+2.修复ctrl+v+enter快捷方式带来的问题：
+* 涉及文件
+![](/assets/ueditor_3.png)
