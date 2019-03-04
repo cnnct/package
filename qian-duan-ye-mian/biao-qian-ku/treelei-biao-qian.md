@@ -23,6 +23,7 @@
   ![](/assets/tree_edit_5.png)
   再根据传入的参数定义可编辑等功能的配置，包括动态绑定使用者的动态方法：
   ![](/assets/tree_edit_6.png)
+  后续调用方可以参看common.js
 
 
 
