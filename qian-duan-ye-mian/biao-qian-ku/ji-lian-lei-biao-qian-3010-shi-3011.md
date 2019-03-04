@@ -5,5 +5,5 @@
 （2）input_tree + cas_select_child + cas_select_child + ......,即第一级用input_tree标签，后续级都用child标签；
 
 2.以上第一种组合说明：
-
-
+* 页面加载级联组件，传入参数到后台
+![](/assets/cas_1.png)
