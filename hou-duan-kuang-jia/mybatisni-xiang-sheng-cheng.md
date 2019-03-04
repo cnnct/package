@@ -16,6 +16,7 @@ org.mybatis.generator.api.dom.java.Interface
 
 org.mybatis.generator.config.xml.MyBatisGeneratorConfigurationParser
 
+org.mybatis.generator.api.dom.xml.XmlElement 关于二级缓存的修改
 #### GeneratorSqlmap.java
 
 使用mybatis逆向生成时，是运行GeneratorSqlmap.java这个类的main方法实现的。这个类中包含：先删除普通pojo、Mapper.java、Mapper.xml文件，再调用mybatis-generator-core-1.3.2.jar中的方法生成普通pojo、Mapper.java、Mapper.xml文件，再调用此类中的方法custGenerator生成custom\(即扩展的\)pojo、Mapper.java、Mapper.xml文件。
