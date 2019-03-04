@@ -16,3 +16,5 @@ child标签：
 为parent-select和child-select属性绑定change事件：
 ![](/assets/cas_5.png)
 ![](/assets/cas_6.png)
+递归检查子级：
+![](/assets/cas_7.png)
