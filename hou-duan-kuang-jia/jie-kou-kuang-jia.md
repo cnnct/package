@@ -32,6 +32,8 @@
   将根据sys_para表中配置的参数决定记录日志的规则
   
   ![](/assets/interface_version6.png)
+  开启线程池支持接口异步记录日志：（配置文件：application-bean.xml）
+  ![](/assets/interface_log1.png)
   ![](/assets/interface_version5.png)
   ![](/assets/interface_version7.png)
   
