@@ -2,4 +2,6 @@
 
 ##业务请求和接口请求控制重复提交：
 1.涉及的文件：
+![](/assets/request_repeat1.png)
+![](/assets/request_repeat2.png)
 
