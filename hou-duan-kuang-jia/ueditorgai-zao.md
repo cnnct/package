@@ -30,4 +30,9 @@ ueditor源码版本，下载地址，以及改造点
 
 **三.ueditor模板加载文件：**  
  ueditor.ftl和ueditorTag.java
+ 
+**四.后续改造部分:**
+1.修复上传图片乱序问题：
+* 涉及文件：
 
+![](/assets/ueditor_2.png)
