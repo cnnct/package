@@ -33,6 +33,7 @@
   
   ![](/assets/interface_version6.png)
   ![](/assets/interface_version5.png)
+  ![](/assets/interface_version7.png)
   
 * 示例：
   ![](/assets/frontDoc_interface8.png)
