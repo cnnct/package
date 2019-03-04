@@ -15,7 +15,7 @@
   2.tree组件模板加载参数配置：
   ![](/assets/tree_edit_2.png)
   ![](/assets/tree_edit_3.png)
-  3.加载tree的初始化配置：
+  3.加载tree的初始化配置（common.js文件）：
   （1）tree主配置：
   ![](/assets/tree_edit_4.png)
 
