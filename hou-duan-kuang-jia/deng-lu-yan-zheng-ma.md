@@ -14,6 +14,6 @@
 * 页面加载验证码：
 ![](/assets/vercode2.png)
 * 后台加载绘制验证码：
-
+会根据applicationContext-bean.xml中配置的样式加载验证码
 ![](/assets/vercode_4.png)
 ![](/assets/vercode_5.png)
