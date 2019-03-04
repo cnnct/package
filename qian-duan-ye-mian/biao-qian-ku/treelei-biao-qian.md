@@ -18,9 +18,11 @@
   3.加载tree的初始化配置（common.js文件）：
   （1）tree主配置：
   ![](/assets/tree_edit_4.png)
-  （2）可编辑功能和导航功能配置：
-  
-  
+  （2）可编辑功能和导航功能配置（common.js）：
+  先初始化可编辑配置：
+  ![](/assets/tree_edit_5.png)
+  再根据传入的参数定义可编辑等功能的配置，包括动态绑定使用者的动态方法：
+  ![](/assets/tree_edit_6.png)
 
 
 
