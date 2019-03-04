@@ -18,7 +18,8 @@
   3.加载tree的初始化配置（common.js文件）：
   （1）tree主配置：
   ![](/assets/tree_edit_4.png)
-
+  （2）可编辑功能和导航功能配置：
+  
   
 
 
