@@ -47,6 +47,7 @@
       * [菜单组件【施、陈】](qian-duan-ye-mian/shou-ye-bu-ju/cai-dan-zu-jian.md)
       * [皮肤切换【施、陈】](qian-duan-ye-mian/shou-ye-bu-ju/pi-fu-qie-huan.md)
       * [右侧主嵌入模块【施】](qian-duan-ye-mian/shou-ye-bu-ju/you-ce-zhu-qian-ru-mo-kuai-3010-shi-3011.md)
+      * 收藏夹模块【施】
   * [echarts整合【施】！！！](qian-duan-ye-mian/echartszheng-he.md)
   * [浏览器多用户登录互斥实现【陆】！！！](qian-duan-ye-mian/liu-lan-qi-duo-yong-hu-deng-lu-hu-chi-shi-xian.md)
 * [框架打包](kuang-jia-da-bao.md)
