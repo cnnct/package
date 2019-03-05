@@ -4,6 +4,9 @@
 2.前端代码：
  * 页面部分：
  ![](/assets/index_7.jpg)
- ![](/assets/index_8.jpg)
- * 
+
+ * js部分：
+ ![](/assets/index_8.jpg) 
+ ![](/assets/index_9.jpg)
+ ![](/assets/index_10.jpg)
 3.后端代码：
