@@ -18,3 +18,4 @@ child标签：
 ![](/assets/cas_6.png)
 递归检查子级：
 ![](/assets/cas_7.png)
+3.以上第二种组合和第一种类似
