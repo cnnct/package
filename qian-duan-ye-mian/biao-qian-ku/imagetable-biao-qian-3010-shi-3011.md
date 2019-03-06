@@ -10,5 +10,5 @@
     jquery.bs_pagination.js
     common.js
     
-3.前端文件：
-    
+3.前端部分：
+    ![](/assets/image_table_1.png)
