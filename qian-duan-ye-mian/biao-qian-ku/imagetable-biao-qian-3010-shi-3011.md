@@ -8,4 +8,6 @@
     colorbox.js，
     sortable.js，
     jquery.bs_pagination.js
+    common.js
+3.
     
