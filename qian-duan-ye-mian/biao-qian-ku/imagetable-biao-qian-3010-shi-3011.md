@@ -11,4 +11,8 @@
     common.js
     
 3.前端部分：
+    * 标签引用
     ![](/assets/image_table_1.png)
+    ![](/assets/image_table_2.png)
+    * 标签加载：
+    ![](/assets/image_table_3.png)
