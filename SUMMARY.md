@@ -39,6 +39,7 @@
     * [echarts标签整合【施】！！！](qian-duan-ye-mian/echartszheng-he.md)
     * [时间类标签](qian-duan-ye-mian/biao-qian-ku/shi-jian-lei-biao-qian.md)
     * [dual\_select\_list标签](qian-duan-ye-mian/biao-qian-ku/dualselect-list-biao-qian.md)
+    * [image\_table标签【施】](qian-duan-ye-mian/biao-qian-ku/imagetable-biao-qian-3010-shi-3011.md)
   * [提示对话框【施】](qian-duan-ye-mian/ti-shi-dui-hua-kuang.md)
   * [form表单js验证框架【施】](qian-duan-ye-mian/jsyan-zheng-kuang-jia.md)
   * [文件上传【施】！！！](qian-duan-ye-mian/wen-jian-shang-chuan.md)
