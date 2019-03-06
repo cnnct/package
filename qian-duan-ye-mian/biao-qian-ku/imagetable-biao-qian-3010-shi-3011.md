@@ -7,4 +7,5 @@
     jquery.bs_pagination.css，
     colorbox.js，
     sortable.js，
+    jquery.bs_pagination.js
     
