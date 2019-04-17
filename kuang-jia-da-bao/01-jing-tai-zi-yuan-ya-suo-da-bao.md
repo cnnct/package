@@ -32,6 +32,8 @@ npm install -g cnpm --registry=[http://registry.npm.taobao.org](http://registry.
 
 执行cnpm install -g gulp 执行完后检测是否安装完成，如图，输入gulp -v
 
+若
+
 ![](/assets/1import.png)
 
 #### 2.2、创建临时环境
