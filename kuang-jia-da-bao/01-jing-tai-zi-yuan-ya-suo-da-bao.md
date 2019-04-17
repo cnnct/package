@@ -16,7 +16,7 @@ Gulp模块是基于node环境来运行，首先要在本地搭建node环境，�
 
 #### 1.3、检验结果
 
-检验安装成功的结果是在window 输入cmd 弹出命令窗口，输入node –-version 和npm –v查看
+检验安装成功的结果是在window 输入cmd 弹出命令窗口，输入node --version 和npm –v查看
 
 ![](/assets/import1.png)
 
