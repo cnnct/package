@@ -30,7 +30,7 @@ npm install -g cnpm --registry=[http://registry.npm.taobao.org](http://registry.
 
 #### 2.1、全局安装gulp
 
-执行cnpm install -g gulp 执行完后检测是否安装完成，如图
+执行cnpm install -g gulp 执行完后检测是否安装完成，如图，输入plup -v
 
 ![](/assets/1import.png)
 
