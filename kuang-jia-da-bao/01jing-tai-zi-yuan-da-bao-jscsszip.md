@@ -2,9 +2,13 @@
 
 将将需要压缩处理的静态文件,css、js等按目录放好，拷贝到另一个待处理的目录
 
-直接运行JsCssZip.exe，【加载】目录，再点【压缩】直至提示每个文件处理完成。
+直接运行JsCssZip.exe，【加载】目录，
 
+![](/assets/cssjszip_load.png)
 
+再点【压缩】直至提示每个文件处理完成。
+
+![](/assets/cssjszip_deal.png)
 
 若处理时有报错
 
