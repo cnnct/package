@@ -18,6 +18,8 @@
 
 ![](/assets/exportjar.png)
 
+
+
 二、使用proguard混淆jar包中代码
 
 ##### 【注意：后续再使用，可跳过前面的设置步骤，直接操作8，但保证输入输出路径文件正常，以及需要引用的lib目录是最新完整的】
@@ -38,7 +40,7 @@
 
 ![](/assets/import_jar.png)
 
-
+![](/assets/import_jar_jre.png)
 
 ![](/assets/input/output.png)
 
