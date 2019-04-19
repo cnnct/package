@@ -36,7 +36,7 @@
 > > * 一旦版本确认需要出包，则保证打包文件完整输出，且数据库脚本也完整的前提下，通过svn进行分支标签的建立，尽量保证分支的完整性及静态性。svn的分支操作方法详见：[http://blog.csdn.net/vbirdbest/article/details/51122637](http://blog.csdn.net/vbirdbest/article/details/51122637)
 > >
 > > > * 操作方法：在eclipse右键/team/分支\(标记\)，打开操作框
-> > > * 到URL：指向目录（其中x.y.z是版本号，会自动创建此目录，图中的utf-8编码忽略）：[https://183.129.148.83:8843/svn/IPM/互联网产品部/项目/管理平台2.0/2-源代码/manageplat\_tags/x.y.z](https://183.129.148.83:8843/svn/IPM/互联网产品部/项目/管理平台2.0/2-源代码/manageplat_tags)
+> > > * 到URL：指向目录（其中x.y.z是版本号，会自动创建此目录，图中的url编码转码忽略）：[https://183.129.148.83:8843/svn/IPM/互联网产品部/项目/管理平台2.0/2-源代码/manageplat\_tags/x.y.z](https://183.129.148.83:8843/svn/IPM/互联网产品部/项目/管理平台2.0/2-源代码/manageplat_tags)
 > > > * Resources：此项不用修改
 > > >
 > > > ![](/assets/branch_tag.png)
