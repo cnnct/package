@@ -2,7 +2,11 @@
 
 总共分两大步：
 
-1.从eclipse等IDE中导出jar包
+1.从eclipse等IDE中导出jar包，
+
+> 2019-04-18，pengm,在打包2.8版本的jar包时，单独运行打包后的web项目时，加载出现奇怪问题，最后我直接把classes目录下的increator目录和baseconfig目录两个一起压成zip文件，后缀改成jar，又能正常使用。
+>
+> ![](/assets/jar_export.png)
 
 2.使用proguard混淆jar包中代码
 
@@ -20,7 +24,7 @@
 
 去proguard官网
 
-https://www.guardsquare.com/en/proguard
+[https://www.guardsquare.com/en/proguard](https://www.guardsquare.com/en/proguard)
 
 下载后解压，运行proguardgui.bat。
 
