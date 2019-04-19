@@ -34,7 +34,9 @@
 
 \(1\)Input/Output：点击Add input选择要混淆的jar包，点击Add output选择混淆后jar导出目录，点击Add添加jar包引用，即eclipse项目Build Path中Libraries下所有jar包，包括jre，示例如下：
 
-【注意：除了引用managerplat里所有jar外，还需要引用jre里的系统包，可以将这些jar包固定放一个指定目录，加载时只加载这个目录即可】
+#### 【注意：除了引用managerplat里所有jar外，还需要引用jre里的系统包，可以将这些jar包固定放一个指定目录，加载时只加载这个目录即可】
+
+![](/assets/import_jar.png)
 
 
 
