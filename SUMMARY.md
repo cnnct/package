@@ -52,7 +52,8 @@
       * [收藏夹模块【施】](qian-duan-ye-mian/shou-ye-bu-ju/shou-cang-jia-mo-kuai-3010-shi-3011.md)
   * [浏览器多用户登录互斥实现【陆】！！！](qian-duan-ye-mian/liu-lan-qi-duo-yong-hu-deng-lu-hu-chi-shi-xian.md)
 * [框架打包](kuang-jia-da-bao.md)
-  * [01-静态资源gulp压缩打包](kuang-jia-da-bao/01-jing-tai-zi-yuan-ya-suo-da-bao.md)
+  * [01-静态资源gulp压缩打包【废弃】](kuang-jia-da-bao/01-jing-tai-zi-yuan-ya-suo-da-bao.md)
+  * 01-静态资源打包JsCssZip
   * [02-java基础包混淆打包](kuang-jia-da-bao/02-javaji-chu-bao-hun-yao-da-bao.md)
   * [03-Ant打包](kuang-jia-da-bao/03-ant-da-bao.md)
   * [04-开发手册本地发布](kuang-jia-da-bao/04kai-fa-shou-ce-ben-di-fa-bu.md)
