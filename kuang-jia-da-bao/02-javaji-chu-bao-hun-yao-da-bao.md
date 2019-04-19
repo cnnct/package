@@ -78,5 +78,11 @@ increator.core.entity.\_\_：表示此包下所有java类（包含子目录中�
 
 意思就是保留increator.core.entity包下所有类的类名、属性名、方法名（也就是都不混淆）。
 
-\(8\)ProGuard：重新回到proguard软件界面----&gt;点击ProGuard下面的Load configuration选择刚刚修改完的配置文件----&gt;点击Process下的Process!开始混淆----&gt;完成。
+\(8\)ProGuard：重新回到proguard软件界面----&gt;点击ProGuard下面的Load configuration选择刚刚修改完的配置文件----&gt;点击Process下的Process!开始混淆----&gt;完成。【注意：后续再使用，可跳过前面的设置步骤，直接操作8，但保证输入输出路径文件正常，以及需要引用的lib目录是最新完整的】
+
+
+
+
+
+
 
