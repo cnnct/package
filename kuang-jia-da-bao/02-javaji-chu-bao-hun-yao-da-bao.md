@@ -4,7 +4,7 @@
 
 1.从eclipse等IDE中导出jar包，
 
-> 2019-04-18，pengm,在打包2.8版本的jar包时，单独运行打包后的web项目时，加载出现奇怪问题，最后我直接把classes目录下的increator目录和baseconfig目录两个一起压成zip文件，后缀改成jar，又能正常使用。
+> 2019-04-18，pengm,在打包2.8版本的jar包时，单独运行打包后的web项目时，加载出现奇怪问题，最后我直接把classes目录下的文件一起压成zip文件，后缀改成jar，又能正常使用。
 >
 > ![](/assets/jar_export.png)
 
