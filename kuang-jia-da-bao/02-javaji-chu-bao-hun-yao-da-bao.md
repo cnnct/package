@@ -18,11 +18,14 @@
 
 ![](/assets/exportjar.png)
 
-
-
 二、使用proguard混淆jar包中代码
 
-##### 【注意：后续再使用，可跳过前面的设置步骤，直接操作8，但保证输入输出路径文件正常，以及需要引用的lib目录是最新完整的】
+##### 【注意：
+
+* ##### 后续再使用，可跳过前面的设置步骤，直接操作步骤8，但保证输入输出路径文件正常，以及需要引用的lib目录是最新完整的
+* ##### 步骤2中，除了引用managerplat里所有jar外，还需要引用jre里的系统包，可以将这些jar包固定放一个指定目录，加载时只加载这个目录即可，最后还是将配置全部保存到ProGuard.pro中，下次直接使用
+
+##### 】
 
 1.proguard下载启动
 
@@ -36,7 +39,7 @@
 
 \(1\)Input/Output：点击Add input选择要混淆的jar包，点击Add output选择混淆后jar导出目录，点击Add添加jar包引用，即eclipse项目Build Path中Libraries下所有jar包，包括jre，示例如下：
 
-#### 【注意：除了引用managerplat里所有jar外，还需要引用jre里的系统包，可以将这些jar包固定放一个指定目录，加载时只加载这个目录即可】
+#### 【注意：】
 
 ![](/assets/import_jar.png)
 
