@@ -1,7 +1,3 @@
-涉及到的配置、注解等
-
-以及定时器并发控制等
-
 # Spring定时任务的使用
 
 #### springmvc-servlet.xml文件配置示例：
@@ -40,6 +36,8 @@ public class TestTask {
     }    
 }
 ```
+
+2018改造优化，可支持时间配置统一写到配置文件中，如下图所示
 
 ![](/assets/task2.png)
 
