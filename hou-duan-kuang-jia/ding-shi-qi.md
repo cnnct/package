@@ -39,5 +39,5 @@ public class TestTask {
 
 2018改造优化，可支持时间配置统一写到配置文件中，如下图所示
 
-![](/assets/task2.png)
+![](/assets/task2.png)![](/assets/task1.png)
 
