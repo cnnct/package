@@ -41,5 +41,5 @@ public class TestTask {
 }
 ```
 
-
+![](/assets/task2.png)
 
