@@ -2,8 +2,6 @@
 
 #### 相关文件目录：/ocx/print
 
-
-
 #### print**标签的属性 :**
 
 > init\_page标签为初始化加载标签，有3个属性分别为title、link、script
@@ -29,7 +27,7 @@
 > </@print>
 > ```
 >
-> ![](/assets/print1.png)
+> ![](/assets/print.png)
 
 # 后端配合**使用：保存report表，组装打印显示数据**
 
